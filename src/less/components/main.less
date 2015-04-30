@@ -1,23 +1,37 @@
 /* ////////////////////// */
 /*       MAIN             */
 /* ////////////////////// */
-.flyingBall {
-  background-image: url(../img/big_baloons.jpg);
-  height: 710px;
-  text-align: center; 
-  -webkit-background-size: cover;
-  background-size: cover;
-  min-height: 710px;
+.tizer
+{
+    background-image: url(../img/big_baloons.jpg);
+    min-height: 710px;
+    text-align: center; 
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    
+    &--title
+    {   
+        color: #fff;
+        font-size: 66px;
+        top: 0;
+        left: 0;
+        margin: auto;
+        bottom: 0;
+        right: 0;
+        width: 760px;
+        height: 160px;
+        position: absolute; 
+    }
 } 
-.flying-details{
-  display: inline-block;
+
+
+.flying-details
+{
+    display: inline-block;
 }
-.flyingBall-title {
-  font-size: 66px; 
-  padding: 250px 250px 180px; 
-  padding-top: 250px;
-  padding-bottom: 180px;    
-}
+
+
 
 .flyingBall-details {
   font-family:  "Fira Sans Regular", sans-serif;
