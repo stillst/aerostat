@@ -4,28 +4,28 @@
 	<meta charset="UTF-8">
 	<title>Монгольферкин</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link href="slider/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
-	<header class="page-header">
+	<header class="head-foot">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col4">
-					<a href="" class="header-logo">Монгольферкин и КО</a>	
+				<div class="col-4">
+					<a href="#" class="head-foot--logo">Монгольферкин и КО</a>	
 				</div>
-					<div class="col8">
-						<nav class="header-nav clearfix">
-								<ul>
-									<li class="frame"><a class="header-list" href="">Кто мы</a></li>
-									<li class="frame"><a class="header-list" href="">Фотографии</a></li>
-									<li class="frame"><a class="header-list" href="">План полёта</a></li>
-									<li class="frame"><a class="header-list" href="">Заказать</a></li>
-									<li class="frame"><a class="header-list" href="">Команда</a></li>
-									<li class="frame"><a class="header-list" href="">Контакты</a></li>
-								</ul>
-						</nav>
-					</div>
+				<div class="col-8">
+					<nav>
+						<ul class="head-foot--nav">
+							<li class="head-foot--nav-item"><a href="#">Кто мы</a></li>
+							<li class="head-foot--nav-item"><a href="#">Фотографии</a></li>
+							<li class="head-foot--nav-item"><a href="#">План полёта</a></li>
+							<li class="head-foot--nav-item"><a href="#">Заказать</a></li>
+							<li class="head-foot--nav-item"><a href="#">Команда</a></li>
+							<li class="head-foot--nav-item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>		
 		</div>
 	</header>
@@ -39,16 +39,16 @@
 	<div class="bonus">
 		<div class="wrapper">		  
 			<div class="row">
-				<div class="col3">
+				<div class="col-3">
 					<p class="bonus-item bonus-item-thumb">Современный надежный шар</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="bonus-item bonus-item-glasses">Обучение пилотированию</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="bonus-item bonus-item-photo">Фотосъемка<br>в полете</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="bonus-item bonus-item-binocular">Потрясающие<br>виды</p>
 				</div>
 			</div>		 
@@ -57,13 +57,17 @@
 	<section class="about">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col4">
+				<div class="col-4">
 					<h2 class=" section-title section-title-left">Вкратце</h2>
 						<p class="text paragraph">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. </p>
 						<p class="text">Мы предлагаем полетать с нами!</p>	
 				</div>
 				<div class="aerostat">
-				<div class="col8"><iframe class="video" src="https://www.youtube.com/embed/CNAjd1cts-g" frameborder="0" allowfullscreen></iframe></div>
+				<div class="col-8">
+					<iframe class="video" src="https://www.youtube.com/embed/CNAjd1cts-g">
+						
+					</iframe>
+				</div>
 			</div>
 			</div>
 		</div>
@@ -98,7 +102,7 @@
 			</div>
 	</section>
 	<div class="nearest">
-		<div class="wrapper clearfix">
+		<div class="wrapper">
 			<p class="pull-left">До ближайшего полёта</p>
 			<p class="pull-right">
 				<span>2 дня</span>
@@ -111,7 +115,7 @@
 	<section class="cost">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col6">
+				<div class="col-6">
 				  <h2 class="section-title section-title-left">Расчитать стоимость</h2>
 				   <div class="cost-info">
 					<p class="cost-text paragraph">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
@@ -119,7 +123,7 @@
 					<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
 				  </div>
 				</div>
-				<div class="col6">
+				<div class="col-6">
 				 <form>
 				 <fieldset>
 				 	<label class="cost-label">Маршрут полёта: <select class="cost-select-large"><option>на запад</option><option>на восток</option><option>на север</option><option>на юг</option></select></label>
@@ -147,7 +151,12 @@
 				 	<fieldset><label class="cost-label">Имя и фамилия:<input class="cost-input " type="text" placeholder="Поля Фокус" maxlength="20"></label></fieldset>
 				 	<fieldset><label class="cost-label">Телефон:<input class="cost-input cost-input-large" type="text" placeholder="89216574566" maxlength="20"></label></fieldset>
                     <div class="total">
-				 	<p class="total-cost">Стоимость:<span class="total-number">9000 p.</span> <button class="fly" type="submit" form="cost-form">Полетели</button></p></div>
+					 	<p class="total-cost">
+					 		Стоимость:
+					 		<span class="total-number">9000 p.</span>
+					 		<button class="fly" type="submit">Полетели</button>
+					 	</p>
+				 	</div>
 				 </form>
 				 </div> 
 			</div>
@@ -156,7 +165,7 @@
 	<div class="payment">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col6">
+				<div class="col-6">
 					<h2 class="section-title section-title-left">Способ оплаты</h2>
 					<h3 class="pay-cash">Наличными</h3>
 					<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
@@ -167,7 +176,7 @@
 					<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте: <a href="">mnebyvnebo@gmail.com</a></p>
 					<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
 				</div>
-				<div class="col6">
+				<div class="col-6">
 					<h2 class="section-title section-title-left">Частые вопросы</h2>
 					<div class="question">
 					<ul>
@@ -193,22 +202,22 @@
 			</div>
 		</div>
 	</div>
-	<section class="stat clearfix">
+	<section class="stat">
 		<div class="wrapper">		 
 			<div class="row">
-				<div class="col3">
+				<div class="col-3">
 					<p class="stat-numbers">700</p>
 					<p class="stat-text">Полётов<br>в год</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="stat-numbers">3000</p>
 					<p class="stat-text">Средняя<br>дальность в метрах</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="stat-numbers">3</p>
 					<p class="stat-text">Воздушных<br>шара</p>
 				</div>
-				<div class="col3">
+				<div class="col-3">
 					<p class="stat-numbers">12</p>
 					<p class="stat-text">Человек<br>в команде</p>
 				</div>				
@@ -216,26 +225,26 @@
 		</div>
 	</section>
 	<section>
-		<div class="instructor clearfix">
+		<div class="instructor">
 			<div class="wrapper">
 				<h2 class="section-title section-title-center">Команда инструкторов</h2>
 					<div class="row">
-						<div class="col3">
+						<div class="col-3">
 							<img src="img/trainer1.jpg" alt="" class="instructor-img">
 							<p class="instructor-name">Мария Мариева</p>
                              <p class="instructor-profession">Страший пилот</p>
 						</div>
-						<div class="col3">
+						<div class="col-3">
 							<img src="img/trainer2.jpg" height="150" width="150" alt="" class="instructor-img">
 							<p class="instructor-name">Надежда Надеждова</p>
 							<p class="instructor-profession">Второй пилот</p>
 						</div>
-						<div class="col3">
+						<div class="col-3">
 							<img src="img/trainer3.jpg" height="150" width="150" alt="" class="instructor-img">
 							<p class="instructor-name">Ирина Иринова</p>
                             <p class="instructor-profession">Авиадиспетчер</p>
 						</div>
-						<div class="col3">
+						<div class="col-3">
 							<img src="img/trainer4.jpg" height="150" width="150" alt="" class="instructor-img">
 							<p class="instructor-name">Алёна Алёнова</p>
                             <p class="instructor-profession">Авиатехник</p>
@@ -249,12 +258,12 @@
 			<div class="wrapper">
 				<div class="row">
 					<h2 class="section-title section-title-center">Отзывы</h2>
-						<div class="col6">
+						<div class="col-6">
 							<img class="feedback-img" src="img/feedback-img.jpg" height="100" width="100" alt="">
 							<p class="feedback-name">Ольга Алексеева</p>
 							<p class="feedback-text">Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
 						</div>
-						<div class="col6">
+						<div class="col-6">
 							<img class="feedback-img" src="img/feedback-img2.jpg" height="100" width="100" alt="">
 							<p class="feedback-name">Артём Рыбкин</p>
 							<p class="feedback-text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
@@ -272,14 +281,14 @@
   				</div>
   				<div class="wrapper">
   					<div class="row">
-  						<div class="col4">
+  						<div class="col-4">
   							<div class="office">
 			  					<p class="office-address-title">Наш офис в Питере:</p>
 			  					<p class="office-address">Литейный 14Б<br>12:00 - 19:00</p>
 			  					<p class="office-tel">746-67-33</p>
 			  			    </div>
   						</div>
-  						<div class="col4">
+  						<div class="col-4">
 			  				<div class="office">
 			  					<div class="office-text">
 				  					<p class="office-address-title">Наш офис во Всеволжске:</p>
@@ -288,7 +297,7 @@
 			  					</div>
 			  				</div>			  				
   						</div>
-  						<div class="col4">
+  						<div class="col-4">
   				   			<div class="office-text">
   				    			<img class="mail-img" src="img/mail.png" height="17" width="23" alt="">
   								<a href="#" class="mail"> mnebyvnebo@gmail.com</a>
@@ -308,21 +317,21 @@
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col4">
+					<div class="col-4">
 						<a href="" class="footer-logo">Монгольферкин и КО</a>	
 					</div>
-						<div class="col8">
-							<nav class="footer-nav clearfix">
-									<ul>
-										<li class="frame"><a href="">Кто мы</a></li>
-										<li class="frame"><a href="">Фотографии</a></li>
-										<li class="frame"><a href="">План полёта</a></li>
-										<li class="frame"><a href="">Заказать</a></li>
-										<li class="frame"><a href="">Команда</a></li>
-										<li class="frame"><a href="">Контакты</a></li>
-									</ul>
-							</nav>
-						</div>
+					<div class="col-8">
+						<nav class="footer-nav">
+							<ul>
+								<li class="frame"><a href="">Кто мы</a></li>
+								<li class="frame"><a href="">Фотографии</a></li>
+								<li class="frame"><a href="">План полёта</a></li>
+								<li class="frame"><a href="">Заказать</a></li>
+								<li class="frame"><a href="">Команда</a></li>
+								<li class="frame"><a href="">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -238,33 +238,33 @@ fieldset {
 /* ////////////////////// */
 /*        HEADER          */
 /* ////////////////////// */
-.page-header,
-.page-footer {
+.head-foot {
   background-color: #2c2c2c;
   padding: 10px 0;
 }
-.header-nav ul {
+.head-foot--logo {
+  font-size: 22px;
+  color: #fff;
+}
+.head-foot--nav {
   float: right;
 }
-.frame {
+.head-foot--nav-item {
   display: inline-block;
-  font-family: "Fira Sans Regular", sans-serif;
+  vertical-align: middle;
   font-size: 18px;
   margin-left: 30px;
   padding: 5px;
   border: 1px solid #2c2c2c;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
-.frame:hover {
+.head-foot--nav-item a {
+  color: #fff;
+}
+.head-foot--nav-item:hover {
   border: 1px solid #fff;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
-.header-logo {
-  font-size: 22px;
 }
 /* ////////////////////// */
 /*       INSTRUCTORS          */
@@ -383,110 +383,55 @@ fieldset {
 /* ////////////////////// */
 /*        LAYOUT          */
 /* ////////////////////// */
-.col1 {
-  width: 8.33%;
+.col-1 {
+  width: 8.33333333%;
 }
-.col2 {
-  width: 16.66%;
+.col-2 {
+  width: 16.66666667%;
 }
-.col3 {
+.col-3 {
   width: 25%;
 }
-.col4 {
-  width: 33.33%;
+.col-4 {
+  width: 33.33333333%;
 }
-.col5 {
-  width: 41.66%;
+.col-5 {
+  width: 41.66666667%;
 }
-.col6 {
+.col-6 {
   width: 50%;
 }
-.col7 {
-  width: 58.33%;
+.col-7 {
+  width: 58.33333333%;
 }
-.col8 {
-  width: 66.66%;
+.col-8 {
+  width: 66.66666667%;
 }
-.col9 {
+.col-9 {
   width: 75%;
 }
-.col10 {
-  width: 83.11%;
+.col-10 {
+  width: 83.33333333%;
 }
-.col11 {
-  width: 91.66%;
+.col-11 {
+  width: 91.66666667%;
 }
-.col12 {
+.col-12 {
   width: 100%;
 }
-.container {
+.wrapper {
+  margin: 0 auto;
   width: 1200px;
-  margin: 0px auto;
-}
-row:after,
-row:before {
-  display: inline-block;
-  content: '';
-  clear: both;
 }
 .row {
-  overflow: hidden;
   margin: 0 -18px;
+  font-size: 0;
 }
-.row > div {
-  float: left;
-  font-size: 12px;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-.pull-left {
-  float: left;
-}
-.pull-right {
-  float: right;
-}
-.clearfix:after,
-.clearfix:before {
-  display: block;
-  clear: both;
-  content: "";
-}
-a {
-  text-decoration: none;
-}
-.header-logo,
-.flyingBall-title,
-.bonus-item,
-.section-title,
-.total-number,
-.fly,
-.pay-cash,
-.stat-numbers,
-.stat-text,
-.instructor-name,
-.feedback-name,
-.airoport-address,
-.office-address-title,
-.office-tel,
-.footer-logo {
-  font-family: "Fira Sans Medium", sans-serif;
-}
-.header-logo,
-.flyingBall-title,
-.header-list,
-.frame,
-.flyingBall-details,
-.fly-count,
-.fly,
-.stat-numbers,
-.stat-text {
-  color: #fff;
+.row [class^=col-] {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 18px;
+  font-size: 15px;
 }
 /* ////////////////////// */
 /*       MAIN             */
@@ -647,27 +592,6 @@ a {
   width: 90%;
 }
 /* ////////////////////// */
-/*        RESET         */
-/* ////////////////////// */
-body,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-li {
-  list-style-type: none;
-}
-/* ////////////////////// */
 /*        SLIDER         */
 /* ////////////////////// */
 .gallery-box {
@@ -705,4 +629,60 @@ li {
   line-height: 28px;
   margin-top: 80px;
   text-align: center;
+}
+/***************************
+********Scafolding**********
+***************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/***************************
+********Typography**********
+***************************/
+body {
+  font-family: "Fira Sans Medium", sans-serif;
+  background-color: #f0f2f5;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 16px;
+}
+p {
+  font-size: 15px;
+  line-height: 22px;
+}
+a {
+  color: #fc6e51;
+}
+a:hover {
+  text-decoration: none;
+}
+.title {
+  border-bottom: 1px solid #d8dadc;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
 }
