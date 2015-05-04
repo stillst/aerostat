@@ -5,8 +5,10 @@
 - npm i
 - bower i
 - gulp 
-## If you want to compile production version you need to do:
+
+###If you want to compile production version you need to do:
 - gulp dist
 - gulp connect-dist
-##If you want to clean directory for production version you need to do:
+
+###If you want to clean directory for production version you need to do:
 - gulp clean
