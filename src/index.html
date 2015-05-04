@@ -2,10 +2,20 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Монгольферкин</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Монгольферкин</title>	
 	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href="slider/jquery.bxslider.css" rel="stylesheet" />
+
+
+	<!-- build:css css/vendor.css -->
+	  	<!-- bower:css -->		     
+		    <link href="bower/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet" />
+	  	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css css/style.css -->
+	 	<link rel="stylesheet" href="css/style.css">
+	<!-- endbuild -->
+
 </head>
 <body>
 	<header class="head-foot">
@@ -82,10 +92,12 @@
 					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture2"></li>
 					<li class="img-gallery"><img src="img/gallery3.jpg" alt="picture3"></li>
 					<li class="img-gallery"><img src="img/gallery4.jpg" alt="picture4"></li>
-					<li class="img-gallery"><img src="img/gallery1.jpg" alt="picture5"></li>
-					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture6"></li>
+					
+					
 					<li class="img-gallery"><img src="img/gallery3.jpg" alt="picture7"></li>
 					<li class="img-gallery"><img src="img/gallery4.jpg" alt="picture8"></li>
+					<li class="img-gallery"><img src="img/gallery1.jpg" alt="picture5"></li>
+					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture6"></li>
 				</ul>
 				</div>
 				</div>
@@ -337,17 +349,16 @@
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="slider/jquery.bxslider.min.js"></script>
-	<script>
-	$(function(){
-	      $('.bxslider').bxSlider({
-	    slideWidth: 400,
-	    minSlides: 4,
-	    maxSlides: 4,
-	    slideMargin: 1
-	  });
-	});
-</script>
+	<!-- build:js js/vendor.js -->
+	    <!-- bower:js -->
+		    <script src="bower/jquery/dist/jquery.min.js"></script>
+	    	<script src="bower/bxslider-4/dist/jquery.bxslider.min.js"></script>	
+	    <!-- endbower -->
+  	<!-- endbuild -->
+	
+	<!-- build:js js/script.js -->
+	    <script src="js/script.js"></script>
+	<!-- endbuild -->
+
 </body>
 </html>
