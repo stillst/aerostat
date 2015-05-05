@@ -1,2 +1,5 @@
-temps/
-_design/
+dist
+node_modules
+temp
+_design
+src/bower

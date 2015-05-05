@@ -2,17 +2,27 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Монгольферкин</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Монгольферкин</title>	
 	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
-    <link href="slider/jquery.bxslider.css" rel="stylesheet" />
+
+
+	<!-- build:css css/vendor.css -->
+	  	<!-- bower:css -->		     
+		    <link href="bower/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet" />
+	  	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css css/style.css -->
+	 	<link rel="stylesheet" href="css/style.css">
+	<!-- endbuild -->
+
 </head>
 <body>
 	<header class="head-foot">
 		<div class="wrapper">
 			<div class="row">
 				<div class="col-4">
-					<a href="#" class="head-foot--logo">Монгольферкин и КО</a>	
+					<a href="#" class="head-foot--logo"><img src="images/logo.png"></a>	
 				</div>
 				<div class="col-8">
 					<nav>
@@ -29,12 +39,14 @@
 			</div>		
 		</div>
 	</header>
-	<section class="tizer">
-		<div class="wrapper">		 
-			<h1 class="tizer--title">Организация полетов на воздушных шарах</h1>
-			<a href="#" class="flyingBall-details">Подробнее</a>
-			<div class="arrow"><a href="#"></a></div>		
-		</div>
+	<section class="tizer">			
+		<h1 class="tizer--title">Организация полетов на воздушных шарах</h1>
+		<a href="#" class="btn-details">Подробнее</a>
+		<div class="arrow"><a href="#"></a></div>
+		<span class="tizer--bonuses tizer--bonuses__left-bottom">Удивительный опыт</span>
+		<span class="tizer--bonuses tizer--bonuses__left-top">Увлекательная экскурсия</span>
+		<span class="tizer--bonuses tizer--bonuses__right-top">Запоминающийся подарок</span>
+		<span class="tizer--bonuses tizer--bonuses__right-bottom">Романтическая прогулка</span>	
 	</section>
 	<div class="bonus">
 		<div class="wrapper">		  
@@ -82,10 +94,12 @@
 					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture2"></li>
 					<li class="img-gallery"><img src="img/gallery3.jpg" alt="picture3"></li>
 					<li class="img-gallery"><img src="img/gallery4.jpg" alt="picture4"></li>
-					<li class="img-gallery"><img src="img/gallery1.jpg" alt="picture5"></li>
-					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture6"></li>
+					
+					
 					<li class="img-gallery"><img src="img/gallery3.jpg" alt="picture7"></li>
 					<li class="img-gallery"><img src="img/gallery4.jpg" alt="picture8"></li>
+					<li class="img-gallery"><img src="img/gallery1.jpg" alt="picture5"></li>
+					<li class="img-gallery"><img src="img/gallery2.jpg" alt="picture6"></li>
 				</ul>
 				</div>
 				</div>
@@ -313,41 +327,38 @@
   		</div>
   </section>
 
-<footer class="page-footer">
+	<footer class="head-foot">
 		<div class="wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="col-4">
-						<a href="" class="footer-logo">Монгольферкин и КО</a>	
-					</div>
-					<div class="col-8">
-						<nav class="footer-nav">
-							<ul>
-								<li class="frame"><a href="">Кто мы</a></li>
-								<li class="frame"><a href="">Фотографии</a></li>
-								<li class="frame"><a href="">План полёта</a></li>
-								<li class="frame"><a href="">Заказать</a></li>
-								<li class="frame"><a href="">Команда</a></li>
-								<li class="frame"><a href="">Контакты</a></li>
-							</ul>
-						</nav>
-					</div>
+			<div class="row">
+				<div class="col-4">
+					<a href="#" class="head-foot--logo"><img src="images/logo.png"></a>	
 				</div>
-			</div>
+				<div class="col-8">
+					<nav>
+						<ul class="head-foot--nav">
+							<li class="head-foot--nav-item"><a href="#">Кто мы</a></li>
+							<li class="head-foot--nav-item"><a href="#">Фотографии</a></li>
+							<li class="head-foot--nav-item"><a href="#">План полёта</a></li>
+							<li class="head-foot--nav-item"><a href="#">Заказать</a></li>
+							<li class="head-foot--nav-item"><a href="#">Команда</a></li>
+							<li class="head-foot--nav-item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>		
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="slider/jquery.bxslider.min.js"></script>
-	<script>
-	$(function(){
-	      $('.bxslider').bxSlider({
-	    slideWidth: 400,
-	    minSlides: 4,
-	    maxSlides: 4,
-	    slideMargin: 1
-	  });
-	});
-</script>
+	<!-- build:js js/vendor.js -->
+	    <!-- bower:js -->
+		    <script src="bower/jquery/dist/jquery.min.js"></script>
+	    	<script src="bower/bxslider-4/dist/jquery.bxslider.min.js"></script>	
+	    <!-- endbower -->
+  	<!-- endbuild -->
+	
+	<!-- build:js js/script.js -->
+	    <script src="js/script.js"></script>
+	<!-- endbuild -->
+
 </body>
 </html>

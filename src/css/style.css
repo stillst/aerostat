@@ -240,11 +240,9 @@ fieldset {
 /* ////////////////////// */
 .head-foot {
   background-color: #2c2c2c;
-  padding: 10px 0;
 }
 .head-foot--logo {
-  font-size: 22px;
-  color: #fff;
+  line-height: 70px;
 }
 .head-foot--nav {
   float: right;
@@ -253,7 +251,7 @@ fieldset {
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
-  margin-left: 30px;
+  margin: 20px 0 15px 30px;
   padding: 5px;
   border: 1px solid #2c2c2c;
 }
@@ -437,12 +435,14 @@ fieldset {
 /*       MAIN             */
 /* ////////////////////// */
 .tizer {
-  background-image: url(../img/big_baloons.jpg);
-  min-height: 710px;
+  background-image: url(../images/background_tizer.jpg);
+  min-height: 645px;
   text-align: center;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
+  -webkit-clip-path: polygon(50% 100%, 100% 84%, 100% 0, 0 0, 0 83%);
+  clip-path: polygon(50% 100%, 100% 84%, 100% 0, 0 0, 0 83%);
 }
 .tizer--title {
   color: #fff;
@@ -456,21 +456,48 @@ fieldset {
   height: 160px;
   position: absolute;
 }
-.flying-details {
-  display: inline-block;
+.tizer--bonuses {
+  position: absolute;
+  color: #fff;
+  font-size: 22px;
 }
-.flyingBall-details {
-  font-family: "Fira Sans Regular", sans-serif;
+.tizer--bonuses__left-bottom {
+  left: 255px;
+  bottom: 205px;
+}
+.tizer--bonuses__left-top {
+  left: 425px;
+  top: 125px;
+}
+.tizer--bonuses__right-top {
+  top: 60px;
+  right: 445px;
+}
+.tizer--bonuses__right-bottom {
+  right: 290px;
+  bottom: 205px;
+}
+.btn-details {
   font-size: 18px;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   padding: 10px;
+  color: #fff;
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+  right: 0;
+  max-width: 120px;
+  margin: 0 auto;
 }
-.arrow a:after {
+.arrow:after {
   content: url(../img/arrow.png);
-  height: 20px;
   text-align: center;
   display: inline-block;
-  padding-top: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 /* ////////////////////// */
 /*        MAP         */
