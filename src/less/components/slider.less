@@ -1,9 +1,47 @@
 /* ////////////////////// */
 /*        SLIDER         */
 /* ////////////////////// */
-.gallery-box {
-  margin-top: 60px;
+.gallery
+{
+  &--slider 
+  {
+  	margin-top: 60px;
+  	position: relative;
+  }
+  
+  &--controls
+  {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	
+	a
+  	{
+		color: #444444;
+  	}
+
+	&__prev 
+	{
+  		left: -25px; 		
+  	}
+
+  	&__next 
+	{
+  		right: -25px;  
+  	}
+
+  }
 }
+
 .img-gallery :first-child {
   margin-left: 20px;
 }
+
+.bx-wrapper 
+{
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
