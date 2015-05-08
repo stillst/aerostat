@@ -1,0 +1,79 @@
+.feedbacks
+{
+	text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+
+	&__controls
+    {
+		position: absolute;
+		top: 50%;
+		margin-top: -16px;
+		font-size: 60px;		
+
+	  	a
+	    {
+	  	  color: #444444;
+	    }
+
+	  	&--prev 
+	  	{
+	    	left: -25px; 		
+	    }
+
+	    &--next 
+	  	{
+	    	right: -25px;  
+	    }
+
+	    .fa-chevron-left
+	    {
+			color:#cfcfcf;	
+	    }
+
+	    .fa-chevron-right
+	    {
+			color:#cfcfcf;	
+	    }
+    }
+
+    .feedback
+    {		
+		&__img
+		{
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		    margin-top: 50px;
+		}
+		
+		&__name
+		{
+		  font-size: 22px;
+		  line-height: 26px;
+		  text-align: center;
+		  margin-top: 30px;
+		}
+	  
+		&__text  
+		{
+		  font-family: "Fira Sans Regular",sans-serif;
+		  font-size: 18px;
+		  line-height: 26px;
+		  text-align: center;
+		  margin-top: 10px;
+		}
+	}
+	
+	.bx-viewport
+	{
+	 // min-height: 600px;
+	}
+
+}
+
+.feedback__text 
+{
+  font-style: italic;
+  text-align: center;
+}
