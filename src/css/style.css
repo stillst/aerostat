@@ -42,6 +42,8 @@
 .about .ballon {
   width: 120px;
   position: absolute;
+  text-align: center;
+  text-align: -webkit-center;
 }
 .about .ballon--one {
   top: 180px;
@@ -65,20 +67,27 @@
 }
 .about .ballon__title {
   display: block;
-  margin-bottom: 10px;
   color: #454545;
   font-size: 18px;
   line-height: 26px;
 }
 .about .ballon__count {
+  margin-top: 10px;
   padding-top: 12px;
-  padding-left: 55px;
   background-image: url(../img/forma.png);
   background-repeat: no-repeat;
   display: block;
   height: 70px;
   font-size: 18px;
   background-position: 50% 0%;
+}
+.briefly {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #444444;
+}
+.briefly .video {
+  width: 100%;
+  min-height: 350px;
 }
 /* ////////////////////// */
 /*        BONUS          */
@@ -685,4 +694,48 @@ h4 {
 p {
   font-size: 15px;
   line-height: 22px;
+}
+.briefly .section-info,
+.cost .section-info {
+  vertical-align: top;
+}
+.section-info__title {
+  font-size: 32px;
+  color: #444444;
+  margin-bottom: 50px;
+}
+.section-info__title--center {
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+}
+.section-info__title--center:after {
+  content: "";
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  border-bottom: 4px solid #3e98d7;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  left: 0;
+  display: block;
+  right: 0;
+  margin: 0 auto;
+}
+.section-info__title--left:after {
+  content: "";
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  border-bottom: 4px solid #3e98d7;
+  height: 4px;
+  width: 60px;
+  display: block;
+}
+.section-info__text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+}
+.section-info__text--plus-margin-bottom {
+  margin-bottom: 30px;
 }
