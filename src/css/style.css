@@ -610,7 +610,7 @@ fieldset {
   background: none;
 }
 /* ////////////////////// */
-/*       STATISTIC          */
+/*       STATISTIC        */
 /* ////////////////////// */
 .stat {
   margin-top: 90px;
@@ -619,25 +619,27 @@ fieldset {
   height: 374px;
   width: 100%;
   background-size: cover;
+  color: #fff;
 }
-.stat-numbers {
-  text-align: center;
-  vertical-align: middle;
+.stat__numbers {
   width: 180px;
   height: 180px;
   font-size: 42px;
-  padding: 65px 40px;
+  padding: 75px 40px;
   border: 5px solid #fff;
   border-radius: 100px;
-  position: relative;
-  top: 50px;
-  left: 50px;
 }
-.stat-text {
+.stat__text {
   font-size: 24px;
   line-height: 28px;
-  margin-top: 80px;
+  margin-top: 40px;
+}
+.stat__wrapper {
+  padding: 60px 100px;
+}
+.stat__cell {
   text-align: center;
+  text-align: -webkit-center;
 }
 /***************************
 ********Scafolding**********
