@@ -9,9 +9,9 @@ $(document).ready(function(){
 	    maxSlides: 4,
 	    slideMargin: 1,
 	    pager:false,
-	    nextSelector: '.gallery--controls__next',
+	    nextSelector: '.gallery__controls--next',
 	    nextText:'<i class="fa  fa-2x fa-chevron-right"></i>',
-  		prevSelector: '.gallery--controls__prev',
+  		prevSelector: '.gallery__controls--prev',
   		prevText: '<i class="fa  fa-2x fa-chevron-left"></i>'
 	});
   });

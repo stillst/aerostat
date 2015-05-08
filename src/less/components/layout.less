@@ -30,4 +30,14 @@
     padding: 0 @container-margin;
     font-size: @font-size-base;
   }
+
+  & [class^=col-]:first-child
+  {
+    padding-left:0;
+  }
+
+  & [class^=col-]:last-child
+  {
+    padding-right:0;
+  }
 }

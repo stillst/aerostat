@@ -1,8 +1,8 @@
-.about--bg {
+.about__bg {
   background: url(../img/path.png) 50% 140px no-repeat, url(../img/map2.jpg) 50% 100% no-repeat;
   position: relative;
 }
-.about--wrapper {
+.about__wrapper {
   background-size: 1140px auto, cover;
   margin-top: 95px;
   position: relative;
@@ -10,7 +10,11 @@
   margin: 0 auto;
   width: 1200px;
 }
-.about--nearest-fly {
+.about__nearest-fly-txt {
+  line-height: 100px;
+  font-size: 32px;
+}
+.about__nearest-fly {
   background-color: #000;
   min-height: 100px;
   position: absolute;
@@ -20,41 +24,53 @@
   opacity: 0.7;
   color: #fff;
 }
-.about--nearest-fly #CDT .number-wrapper {
-  display: inline-block;
+.about__nearest-fly #CDT {
+  text-align: right;
+}
+.about__nearest-fly #CDT .number-wrapper {
+  margin-left: 32px;
+  color: #fff;
+  text-align: right;
+}
+.about__nearest-fly #CDT .number-wrapper .number {
+  font-size: 32px;
+  margin-right: 5px;
+}
+.about__nearest-fly #CDT .number-wrapper .caption {
+  font-size: 22px;
 }
 .about .ballon {
   width: 120px;
   position: absolute;
 }
-.about .ballon__one {
+.about .ballon--one {
   top: 180px;
   left: 10px;
 }
-.about .ballon__two {
+.about .ballon--two {
   top: 130px;
   left: 280px;
 }
-.about .ballon__three {
+.about .ballon--three {
   left: 540px;
   top: 20px;
 }
-.about .ballon__four {
+.about .ballon--four {
   left: 840px;
   top: 150px;
 }
-.about .ballon__five {
+.about .ballon--five {
   left: 1060px;
   top: 180px;
 }
-.about .ballon--title {
+.about .ballon__title {
   display: block;
   margin-bottom: 10px;
   color: #454545;
   font-size: 18px;
   line-height: 26px;
 }
-.about .ballon--count {
+.about .ballon__count {
   padding-top: 12px;
   padding-left: 55px;
   background-image: url(../img/forma.png);
@@ -71,29 +87,110 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.bonus--item {
+.bonus__item {
   color: #2c2c2c;
   font-size: 18px;
   min-height: 60px;
   padding-top: 10px;
 }
-.bonus--item__thumb {
+.bonus__item--thumb {
   background: url(../img/like.png) no-repeat;
   padding-left: 80px;
 }
-.bonus--item__glasses {
+.bonus__item--glasses {
   background: url(../img/glasses.png) 0% 90% no-repeat;
   padding-left: 100px;
   padding-top: 60px;
 }
-.bonus--item__photo {
+.bonus__item--photo {
   background: url(../img/photo.png) 0% 90% no-repeat;
   padding-left: 95px;
   padding-top: 60px;
 }
-.bonus--item__binocular {
+.bonus__item--binocular {
   background: url(../img/view.png) 0% 60% no-repeat;
   padding-left: 100px;
+}
+.contacts {
+  background: url(../img/sky-address.jpg) no-repeat;
+  height: 468px;
+  text-align: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 20%);
+  clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 20%);
+}
+.contacts .airport {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.contacts .airport__address {
+  font-size: 26px;
+  line-height: 26px;
+  color: #2b2b2b;
+  text-align: center;
+  margin-top: 30px;
+}
+.contacts .airport__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+  margin-top: 22px;
+}
+.contacts .airport__img {
+  text-align: center;
+  margin-top: 50px;
+}
+.office:after {
+  background: url(../img/address-item.png) 5% 0px no-repeat;
+  content: "";
+  width: 50px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+}
+.office {
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+.office__title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #2b2b2b;
+}
+.office__address {
+  font-family: "Fira Sans Italic", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 26px;
+  color: #525252;
+  margin-bottom: 18px;
+}
+.office__tel {
+  font-size: 26px;
+  line-height: 26px;
+  color: #2b2b2b;
+}
+.icons {
+  padding: 0;
+  margin: 0;
+  margin-left: -160px;
+}
+.icons img {
+  margin-top: 24px;
+  margin-right: 10px;
+}
+.mail {
+  font-family: "Fira Sans Regular";
+  font-size: 22px;
+  line-height: 26px;
+  color: #444444;
+  margin-left: 10px;
+}
+.mail__href {
+  border-bottom: 1px solid #444444;
 }
 /* ////////////////////// */
 /*        FORM         */
@@ -232,24 +329,27 @@ fieldset {
 .head-foot {
   background-color: #2c2c2c;
 }
-.head-foot--logo {
+.head-foot__logo {
   line-height: 70px;
 }
-.head-foot--nav {
-  float: right;
+.head-foot__logo img {
+  vertical-align: middle;
 }
-.head-foot--nav-item {
+.head-foot__nav {
+  margin: 20px 15px;
+  text-align: right;
+}
+.head-foot__nav-item {
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
-  margin: 20px 0 15px 30px;
   padding: 5px;
   border: 1px solid #2c2c2c;
 }
-.head-foot--nav-item a {
+.head-foot__nav-item a {
   color: #fff;
 }
-.head-foot--nav-item:hover {
+.head-foot__nav-item:hover {
   border: 1px solid #fff;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -290,84 +390,6 @@ fieldset {
 .feedback {
   text-align: center;
   margin-bottom: 80px;
-}
-.contacts {
-  background: url(../img/sky-address.jpg) no-repeat;
-  height: 468px;
-  text-align: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.address {
-  text-align: center;
-  padding-bottom: 60px;
-}
-.airoport-address {
-  font-size: 26px;
-  line-height: 26px;
-  color: #2b2b2b;
-  text-align: center;
-  margin-top: 30px;
-}
-.address-text {
-  font-family: "Fira Sans Italic", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-style: italic;
-  margin-top: 22px;
-}
-.address-img {
-  text-align: center;
-  padding-top: 50px;
-}
-.office:after {
-  background: url(../img/address-item.png) 5% 0px no-repeat;
-  content: "";
-  width: 50px;
-  height: 100px;
-  display: block;
-  position: absolute;
-  bottom: 30px;
-}
-.office {
-  text-align: center;
-  position: relative;
-  margin-right: 10px;
-}
-.office-address-title {
-  font-size: 22px;
-  line-height: 26px;
-  color: #2b2b2b;
-}
-.office-address {
-  font-family: "Fira Sans Italic", sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  line-height: 26px;
-  color: #525252;
-  margin-bottom: 18px;
-}
-.office-tel {
-  font-size: 26px;
-  line-height: 26px;
-  color: #2b2b2b;
-}
-.icons img {
-  margin-top: 24px;
-  margin-right: 10px;
-}
-.icons {
-  padding: 0;
-  margin: 0;
-  margin-left: -160px;
-}
-.mail {
-  font-family: "Fira Sans Regular";
-  font-size: 22px;
-  line-height: 26px;
-  color: #444444;
-  border-bottom: 1px solid #444444;
-  margin-left: 10px;
 }
 /* ////////////////////// */
 /*        LAYOUT          */
@@ -422,6 +444,12 @@ fieldset {
   padding: 0 18px;
   font-size: 15px;
 }
+.row [class^=col-]:first-child {
+  padding-left: 0;
+}
+.row [class^=col-]:last-child {
+  padding-right: 0;
+}
 /* ////////////////////// */
 /*       MAIN             */
 /* ////////////////////// */
@@ -435,7 +463,7 @@ fieldset {
   -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
   clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
 }
-.tizer--title {
+.tizer__title {
   color: #fff;
   font-size: 66px;
   top: 0;
@@ -447,24 +475,24 @@ fieldset {
   height: 160px;
   position: absolute;
 }
-.tizer--bonuses {
+.tizer__bonuses {
   position: absolute;
   color: #fff;
   font-size: 22px;
 }
-.tizer--bonuses__left-bottom {
+.tizer__bonuses--left-bottom {
   left: 255px;
   bottom: 205px;
 }
-.tizer--bonuses__left-top {
+.tizer__bonuses--left-top {
   left: 425px;
   top: 125px;
 }
-.tizer--bonuses__right-top {
+.tizer__bonuses--right-top {
   top: 60px;
   right: 445px;
 }
-.tizer--bonuses__right-bottom {
+.tizer__bonuses--right-bottom {
   right: 290px;
   bottom: 205px;
 }
@@ -554,22 +582,22 @@ fieldset {
 /* ////////////////////// */
 /*        SLIDER         */
 /* ////////////////////// */
-.gallery--slider {
+.gallery__slider {
   margin-top: 60px;
   position: relative;
 }
-.gallery--controls {
+.gallery__controls {
   position: absolute;
   top: 50%;
   margin-top: -16px;
 }
-.gallery--controls a {
+.gallery__controls a {
   color: #444444;
 }
-.gallery--controls__prev {
+.gallery__controls--prev {
   left: -25px;
 }
-.gallery--controls__next {
+.gallery__controls--next {
   right: -25px;
 }
 .img-gallery :first-child {
