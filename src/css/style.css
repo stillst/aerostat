@@ -201,6 +201,55 @@
 .mail__href {
   border-bottom: 1px solid #444444;
 }
+.feedbacks {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+.feedbacks__controls {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  font-size: 60px;
+}
+.feedbacks__controls a {
+  color: #444444;
+}
+.feedbacks__controls--prev {
+  left: -25px;
+}
+.feedbacks__controls--next {
+  right: -25px;
+}
+.feedbacks__controls .fa-chevron-left {
+  color: #cfcfcf;
+}
+.feedbacks__controls .fa-chevron-right {
+  color: #cfcfcf;
+}
+.feedbacks .feedback__img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.feedbacks .feedback__name {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 30px;
+}
+.feedbacks .feedback__text {
+  font-family: "Fira Sans Regular", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 10px;
+}
+.feedback__text {
+  font-style: italic;
+  text-align: center;
+}
 /* ////////////////////// */
 /*        FORM         */
 /* ////////////////////// */
@@ -370,35 +419,24 @@ fieldset {
 .instructor {
   text-align: center;
 }
-.instructor-img,
-.feedback-img {
+.instructor-img {
   display: inline-block;
   margin: 0;
   padding: 0;
   margin-top: 50px;
 }
-.instructor-name,
-.feedback-name {
+.instructor-name {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   margin-top: 30px;
 }
-.instructor-profession,
-.feedback-text {
+.instructor-profession {
   font-family: "Fira Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   margin-top: 10px;
-}
-.feedback-text {
-  font-style: italic;
-  text-align: center;
-}
-.feedback {
-  text-align: center;
-  margin-bottom: 80px;
 }
 /* ////////////////////// */
 /*        LAYOUT          */
@@ -528,7 +566,7 @@ fieldset {
   margin: 0 auto;
 }
 /* ////////////////////// */
-/*        MAP         */
+/*        COST         */
 /* ////////////////////// */
 .cost {
   margin-top: 90px;
