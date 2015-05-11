@@ -41,7 +41,7 @@ $(document).ready(function(){
         $(this).next('dd').addClass("questions__active");                               
       });
    }); 
-  
+
   //tabs
   $(function()
    {
@@ -53,6 +53,7 @@ $(document).ready(function(){
         $(".tabs__article--active").removeClass("tabs__article--active");        
         $(".tabs__article").eq(index).addClass("tabs__article--active");                   
       });
-   });  
+   }); 
 
+   
 });
