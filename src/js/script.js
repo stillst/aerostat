@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  
+  //slider
   $(function()
   {
     $('.bxslider').bxSlider(
@@ -29,4 +31,28 @@ $(document).ready(function(){
   		prevText: '<i class="fa fa-chevron-left"></i>'
 	});
   });
+
+  //dropdownlist
+  $(function()
+   {
+      $(document).on('click', '.questions__list dt', function()
+      {          
+        $(".questions__list dd").removeClass("questions__active");        
+        $(this).next('dd').addClass("questions__active");                               
+      });
+   }); 
+  
+  //tabs
+  $(function()
+   {
+      $(document).on('click', '.tabs__menu-item', function()
+      {  
+        var index = $(this).index();            
+        $(".tabs__menu-item--active").removeClass("tabs__menu-item--active");        
+        $(this).addClass("tabs__menu-item--active");                       
+        $(".tabs__article--active").removeClass("tabs__article--active");        
+        $(".tabs__article").eq(index).addClass("tabs__article--active");                   
+      });
+   });  
+
 });

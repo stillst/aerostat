@@ -415,29 +415,49 @@ fieldset {
   transition-duration: 0.3s;
 }
 /* ////////////////////// */
-/*       INSTRUCTORS          */
+/*       INSTRUCTORS      */
 /* ////////////////////// */
 .instructor {
   text-align: center;
 }
-.instructor-img {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin-top: 50px;
-}
-.instructor-name {
+.instructor__name {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   margin-top: 30px;
 }
-.instructor-profession {
-  font-family: "Fira Sans Regular", sans-serif;
+.instructor__profession {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   margin-top: 10px;
+}
+.instructor__photo {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.instructor__photo:before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  display: block;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.instructor__photo--pilot:before {
+  background-image: url("../images/team/glasses.png");
+}
+.instructor__photo--operator:before {
+  background-image: url("../images/team/radio.png");
+}
+.instructor__photo--mechanic:before {
+  background-image: url("../images/team/spanner.png");
 }
 /* ////////////////////// */
 /*        LAYOUT          */
@@ -583,27 +603,8 @@ fieldset {
   color: #444444;
 }
 /* ////////////////////// */
-/*        PAYMENT         */
+/*        questions       */
 /* ////////////////////// */
-.payment {
-  margin-top: 150px;
-}
-.pay-cash {
-  font-size: 26px;
-  color: #444444;
-  margin: 40px 0px;
-}
-.payment p {
-  margin-bottom: 10px;
-  font-family: "Fira Sans Regular", sans-serif;
-  font-size: 18px;
-  color: #444444;
-  line-height: 24px;
-  margin-top: 20px;
-}
-.questions {
-  margin-top: 40px;
-}
 .questions__list {
   text-decoration: none;
   list-style: none;
@@ -612,15 +613,57 @@ fieldset {
   font-size: 18px;
   border-bottom: 1px dashed #444444;
   display: inline-block;
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
 }
 .questions__list dd {
   font-style: italic;
   font-size: 16px;
   line-height: 22px;
-  padding: 15px 30px;
+  padding: 35px 30px 15px 30px;
   display: none;
 }
-.questions__list .questions_active {
+.questions__list dd:after,
+.questions__list dd:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.questions__list .questions__active {
+  display: block;
+}
+/* ////////////////////// */
+/*           TABS         */
+/* ////////////////////// */
+.tabs__menu {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.tabs__menu .tabs__menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 30px;
+  background-color: #f5f5f5;
+  color: #000;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tabs__menu .tabs__menu-item--active {
+  background: #ec5f5f;
+  color: #fff;
+}
+.tabs__article {
+  display: none;
+  list-style: none;
+}
+.tabs__article p,
+.tabs__article ul {
+  margin-bottom: 20px;
+}
+.tabs__article--active {
   display: block;
 }
 /* ////////////////////// */

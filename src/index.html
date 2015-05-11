@@ -214,10 +214,9 @@
 			<div class="row">
 				<section class="col-6">
 					<h1 class="section-info__title section-info__title--left">Частые вопросы</h1>
-					<dl class="questions__list">						
-						
+					<dl class="questions__list">												
 						<dt>Что взять с собой в полет?</dt>
-						<dd class="questions_active">
+						<dd class="questions__active">
 							Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы.
 						</dd>
 												
@@ -232,20 +231,61 @@
 						</dd>
 												
 						<dt>А полет – это действительно так здорово?</dt>
-						<dd>Это в тысячу раз лучше шоколада.</dd>
-					
+						<dd>Это в тысячу раз лучше шоколада.</dd>					
 					</dl>
 				</section>
-				<section class="col-6">
-					<h1 class="section-info__title section-info__title--left">Способ оплаты</h1>
-					<h3 class="pay-cash">Наличными</h3>
-					<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
-					<p>— по телефону: +7 (812) 640-19-39<br>— или по почте: <a href="">mnebyvnebo@gmail.com</a></p>
-					<p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
-					<h3 class="pay-cash">Курьеру</h3>
-					<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
-					<p>— по телефону: +7 (812) 640-19-39,<br>— или по почте: <a href="">mnebyvnebo@gmail.com</a></p>
-					<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+				<section class="col-6">				
+					<h1 class="section-info__title section-info__title--left">Способ оплаты</h1>					
+                  	<div class="tabs">
+	                    <ul class="tabs__menu">
+	                        <li class="tabs__menu-item tabs__menu-item--active">
+	                        	Наличными
+	                        </li>
+	                        <li class="tabs__menu-item">
+	                        	Курьеру
+	                        </li>
+	                        <li class="tabs__menu-item">
+	                        	Картой 
+	                        </li>	     
+	                    </ul>
+	                    <ul class="tabs__articles">
+	                      <li class="tabs__article tabs__article--active">
+	                        <p>
+	                        	Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:
+	                        </p>
+	                        <ul>
+	                        	<li> 
+	                        		- по телефону: +7 (812) 640-19-39
+	                        	</li>
+	                        	<li> 
+	                        		- или по почте: <a href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
+	                        	</li>
+	                        </ul>	
+	                        <p>
+	                        	Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.
+	                        </p>                        
+	                      </li>
+	                      <li class="tabs__article">
+	                        <p>
+	                         	Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:
+	                        </p>
+							<ul>
+	                        	<li> 
+	                        		- по телефону: +7 (812) 640-19-39
+	                        	</li>
+	                        	<li> 
+	                        		- или по почте: <a href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
+	                        	</li>
+	                        </ul>	
+							<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+	                      </li>
+	                      <li class="tabs__article">
+	                         <p>
+	                         	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, nulla quos ex nesciunt molestias distinctio ullam omnis ipsum tempora non nemo corporis cumque, tenetur, nostrum mollitia facilis similique officiis vel?
+	                         </p>
+	                      </li>
+	                    </ul>                                                            
+	                  </div>                                           																								
 				</section>
 				
 			</div>
@@ -274,30 +314,37 @@
 		</div>
 	</section>
 	<div class="wrapper">
-		<section>
-			<div class="instructor">				
-				<h2 class="section-title__info section-info__title--center">Команда инструкторов</h2>
-				<div class="row">
-					<div class="col-3">
-						<img src="img/trainer1.jpg" alt="" class="instructor-img">
-						<p class="instructor-name">Мария Мариева</p>
-	                     <p class="instructor-profession">Страший пилот</p>
+		<section class="instructor">					
+			<h2 class="section-title__info section-info__title--center">Команда инструкторов</h2>
+			<div class="row">
+				<div class="col-3">
+					<div class="instructor__photo instructor__photo--pilot">
+						<img src="img/trainer1.jpg" height="150" width="150" alt="Фотография Марии Мариевой - пилота">	
 					</div>
-					<div class="col-3">
-						<img src="img/trainer2.jpg" height="150" width="150" alt="" class="instructor-img">
-						<p class="instructor-name">Надежда Надеждова</p>
-						<p class="instructor-profession">Второй пилот</p>
+					
+					<p class="instructor__name">Мария Мариева</p>
+                    <p class="instructor__profession">Страший пилот</p>
+				</div>
+				<div class="col-3">
+					<div class="instructor__photo instructor__photo--pilot">
+						<img src="img/trainer2.jpg" height="150" width="150" alt="Фотография Надежды Надеждовой - пилота">	
 					</div>
-					<div class="col-3">
-						<img src="img/trainer3.jpg" height="150" width="150" alt="" class="instructor-img">
-						<p class="instructor-name">Ирина Иринова</p>
-	                    <p class="instructor-profession">Авиадиспетчер</p>
+					<p class="instructor__name">Надежда Надеждова</p>
+					<p class="instructor__profession">Второй пилот</p>
+				</div>
+				<div class="col-3">
+					<div class="instructor__photo instructor__photo--operator">
+						<img src="img/trainer3.jpg" height="150" width="150" alt="Фотография Надежды Надеждовой - пилота">	
 					</div>
-					<div class="col-3">
-						<img src="img/trainer4.jpg" height="150" width="150" alt="" class="instructor-img">
-						<p class="instructor-name">Алёна Алёнова</p>
-	                    <p class="instructor-profession">Авиатехник</p>
+					<p class="instructor__name">Ирина Иринова</p>
+                    <p class="instructor__profession">Авиадиспетчер</p>
+				</div>
+				<div class="col-3">
+					<div class="instructor__photo instructor__photo--mechanic">
+						<img src="img/trainer4.jpg" height="150" width="150" alt="Фотография Надежды Надеждовой - пилота">	
 					</div>
+					<p class="instructor__name">Алёна Алёнова</p>
+                    <p class="instructor__profession">Авиатехник</p>
 				</div>
 			</div>			
 		</section>

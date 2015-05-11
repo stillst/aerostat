@@ -1,28 +1,61 @@
 /* ////////////////////// */
-/*       INSTRUCTORS          */
+/*       INSTRUCTORS      */
 /* ////////////////////// */
-.instructor {text-align: center;}
-.instructor-img
+.instructor
 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin-top: 50px;
-}
-
-.instructor-name
-{
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
-  margin-top: 30px;
-}
+    
+  &__name
+  {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 30px;
+  }
 
-.instructor-profession
-{
-  font-family: "Fira Sans Regular",sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  margin-top: 10px;
+  &__profession
+  {    
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 10px;    
+  }
+
+  &__photo
+  {
+    position: relative;  
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;  
+
+   &:before
+   {
+    content: "";
+    width: 65px;
+    height: 65px;  
+    display: block;    
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+   }
+
+   &--pilot:before
+   {
+     background-image: url("../images/team/glasses.png");
+   }
+
+   &--operator:before
+   {
+     background-image: url("../images/team/radio.png");
+   }
+
+   &--mechanic:before
+   {
+     background-image: url("../images/team/spanner.png");
+   }
+  }
 }
