@@ -43,11 +43,20 @@
 }
 
 
-@media (max-width: 360px) 
+@media (max-width: @resolution-small) 
 {  
   .wrapper
   {  
     width: @container-width-xs;
-  }
-   
+  }   
+}
+
+.col-xs-4
+{
+    width: 33.33333333%;
+}
+
+.col-xs-8 
+{
+    width: 66.66666667%;
 }

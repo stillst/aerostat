@@ -37,32 +37,76 @@
             }
         }
     }
-}
-
-.nav-toggle
-{       
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    display: inline-block;
-    vertical-align: middle;
-    display: none;
-        
-    &__icon
+    
+    .nav-btn
     {
-        display: block;
-        width: 22px;
-        height: 2px;
-        margin-bottom: 4px;        
-        background-color: #fff
+        display: none;                
+        input[type="checkbox"]
+        {
+            display:none;            
+        }
+
+        #nav-menu + label
+        {
+          font: 16px bold;
+          position: relative;
+          color: #444;
+          cursor: pointer;
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          transform: translate(0, 0);
+          right: 40px;
+        }
+
+        #nav-menu + label::before 
+        {
+            content: "\f0c9";
+            color: #fff;
+            font-size: 30px;
+            position: absolute;
+            background-repeat: no-repeat;
+            bottom: 0px;
+        }
     }
 }
 
+@media (max-width: @resolution-small) 
+{
+    /*
+        .nav-toggle
+        {
+            display: inline-block;
+            padding: 23px;
+        } 
+    */
 
-@media (max-width: 360px) {
-    .nav-toggle
+    .nav-btn-wrap
     {
         display: block;
-    } 
+        text-align: right;   
+        padding: 35px 0;    
+    }
+
+    .head-foot
+    {
+        &__nav
+        {    
+            display: none;            
+        }
+
+        .nav-btn
+        {            
+          display: inline-block;
+          vertical-align: middle;
+          position: absolute;
+          right: 20px;
+        }
+
+    }
+
 }
 
