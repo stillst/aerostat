@@ -54,6 +54,4 @@ $(document).ready(function(){
         $(".tabs__article").eq(index).addClass("tabs__article--active");                   
       });
    }); 
-
-   
-});
+}); 

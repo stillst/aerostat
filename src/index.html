@@ -20,7 +20,7 @@
 
 </head>
 <body>
-	<div class="parallax">
+	
 		<header class="head-foot">		
 			<div class="wrapper">
 				<div class="row">
@@ -29,44 +29,43 @@
 							<img src="images/logo.png" alt="logo">
 						</a>	
 					</div>
-					<div class="col-8">
-						<nav>
-							<ul class="head-foot__nav">
-								<li class="head-foot__nav-item"><a href="#">Кто мы</a></li>
-								<li class="head-foot__nav-item"><a href="#">Фотографии</a></li>
-								<li class="head-foot__nav-item"><a href="#">План полёта</a></li>
-								<li class="head-foot__nav-item"><a href="#">Заказать</a></li>
-								<li class="head-foot__nav-item"><a href="#">Команда</a></li>
-								<li class="head-foot__nav-item"><a href="#">Контакты</a></li>
-							</ul>
-						</nav>
-					</div>
+					<nav class="col-8">						
+						<ul class="head-foot__nav">
+							<li class="head-foot__nav-item"><a href="#">Кто мы</a></li>
+							<li class="head-foot__nav-item"><a href="#">Фотографии</a></li>
+							<li class="head-foot__nav-item"><a href="#">План полёта</a></li>
+							<li class="head-foot__nav-item"><a href="#">Заказать</a></li>
+							<li class="head-foot__nav-item"><a href="#">Команда</a></li>
+							<li class="head-foot__nav-item"><a href="#">Контакты</a></li>
+						</ul>
+						<button class="nav-toggle" type="button" >
+						    <span class="nav-toggle__icon"></span>
+		                    <span class="nav-toggle__icon"></span>
+		                    <span class="nav-toggle__icon"></span>
+                		</button>
+					</nav>									
 				</div>	
 			</div>			
 		</header>
-		<section class="tizer">			
-			<div class="parallax__group">
-				<div class="tizer__back parallax__layer parallax__layer--fore">						
-					<h1 class="tizer__title">Организация полетов на воздушных шарах</h1>								
-				</div>
-				<div class="parallax__layer parallax__layer--base">					
-					<a href="#" class="btn-details">Подробнее</a>
-					<div class="arrow"><a href="#"></a></div>
-				</div>				
-				<div class="parallax__layer parallax__layer--back">					
-					<span class="tizer__bonuses tizer__bonuses--left-bottom">Удивительный опыт</span>
-					<span class="tizer__bonuses tizer__bonuses--left-top">Увлекательная экскурсия</span>
-					<span class="tizer__bonuses tizer__bonuses--right-top">Запоминающийся подарок</span>
-					<span class="tizer__bonuses tizer__bonuses--right-bottom">Романтическая прогулка</span>	
+		<section class="tizer">		
+			<div class="tizer__wrapper">
+				<span class="tizer__bonuses tizer__bonuses--left-bottom" data-parallax='{"x" : 300, "distance": 730}'>Удивительный опыт</span>
+				<span class="tizer__bonuses tizer__bonuses--left-top" data-parallax='{"y" : 300, "from-scroll": 10, "distance": 60 }' data-parallax2='{"x": 200, "from-scroll": 200, "distance": 20}' >Увлекательная экскурсия</span>
+				<span class="tizer__bonuses tizer__bonuses--right-top" data-parallax='{"y" : 600, "distance": 490}' data-parallax2='{"x": -100, "from-scroll": 100, "distance": 0}'>Запоминающийся подарок</span>
+				<span class="tizer__bonuses tizer__bonuses--right-bottom" data-parallax='{"x": 100, "distance": 10}'>Романтическая прогулка</span>	
+				<h1 class="tizer__title" data-parallax='{"y" : 30, "distance": 10 }' >Организация полетов на воздушных шарах</h1>
+				<a href="#" class="btn-details" data-parallax='{"y" : 30, "distance": 60 }'>Подробнее</a>
+				<div class="arrow">
+					<a href="#"></a>
 				</div>	
-			</div>								
+			</div>							
 		</section>	  
 
 		<div class="wrapper">
 			<div class="bonus">				 
 				<div class="row">
 					<div class="col-3">
-						<p class="bonus__item bonus__item--thumb">Современный надежный шар</p>
+						<p class="bonus__item bonus__item--thumb" >Современный надежный шар</p>
 					</div>
 					<div class="col-3">
 						<p class="bonus__item bonus__item--glasses">Обучение пилотированию</p>
@@ -465,13 +464,14 @@
 	<!-- build:js js/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.min.js"></script>
-	<script src="bower/bxslider-4/dist/jquery.bxslider.min.js"></script>		    	
+	<script src="bower/bxslider-4/dist/jquery.bxslider.min.js"></script>	
 	<!-- endbower -->
 	<!-- endbuild -->
 	
 	<!-- build:js js/script.js -->
 	<script src="js/script.js"></script>
 	<script src="js/countdown.js"></script>
+	<script src="js/jquery.parallax-scroll.js"></script>
 	<!-- endbuild -->
 
 </body>

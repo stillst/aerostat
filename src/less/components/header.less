@@ -17,6 +17,7 @@
     {      
         margin: 20px 15px; 
         text-align: right; 
+
         &-item
         {
             display: inline-block;
@@ -27,16 +28,41 @@
 
             a
             {
-                color: #fff;
+               color: #fff;
             }
 
             &:hover 
             {
                 border: 1px solid #fff;  
-                -webkit-transition-duration: 0.3s;
-                -o-transition-duration: 0.3s;
-                transition-duration: 0.3s;
             }
         }
     }
 }
+
+.nav-toggle
+{       
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+        
+    &__icon
+    {
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 4px;        
+        background-color: #fff
+    }
+}
+
+
+@media (max-width: 360px) {
+    .nav-toggle
+    {
+        display: block;
+    } 
+}
+
