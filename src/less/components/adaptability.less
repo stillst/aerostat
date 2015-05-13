@@ -1,0 +1,139 @@
+@media (max-width: @resolution-small) 
+{        
+    /* ////////////////////// */
+    /*     HEADER-adaptive    */
+    /* ////////////////////// */
+    .head-foot
+    {
+        &__nav
+        {    
+            display: none;    
+            margin: 0; 
+            text-align: right;
+            display: none;
+            border-top: 2px solid #fff;  
+
+            &-item
+            {
+                display: block;                                
+            }     
+        }
+
+        .nav-btn
+        {            
+          display: block;
+        }
+    }
+
+    /* ////////////////////// */
+    /*     Layout-adaptive    */
+    /* ////////////////////// */
+    .wrapper
+    {  
+        width: @container-width-xs;
+    }   
+  
+    .col-xs-4
+    {
+        width: 33.33333333%;
+    }
+
+    .col-xs-8 
+    {
+        width: 66.66666667%;
+    }
+
+    .col-xs-12 
+    {
+        width: 100%;
+    }
+    /* ////////////////////// */
+    /*     Tizer-adaptive    */
+    /* ////////////////////// */
+    .tizer
+    {
+        height: 300px;
+        min-height: 300px;
+        -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+        clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+
+        &__bonuses
+        {
+            display: none;
+        }
+
+        .arrow
+        {
+            display: none;
+        }
+
+        .btn-details
+        {
+            display: none;
+        }
+
+        &__wrapper
+        {
+            width: @container-width-xs;
+            height: 300px;
+            min-height: 300px;
+        }
+
+        &__title
+        {
+            font-size: 28px; 
+            width: 300px;  
+            height: 60px;    
+            top: 50px;
+            left: 0;
+            right: 0;     
+            margin: 0 auto;                    
+        }
+    }
+
+    /* ////////////////////// */
+    /*        BONUS          */
+    /* ////////////////////// */
+
+    .bonus 
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+
+        &__item 
+        {
+            min-height: 60px;
+            padding-top: 20px;  
+            font-weight: normal;             
+            
+            &--thumb 
+            {
+              background: url(../images/bonus/xs/like.png) 8% 0% no-repeat;
+              padding-left: 70px;
+              padding-top: 10px;
+            }
+
+            &--glasses
+            {
+              background: url(../images/bonus/xs/rudder.png) 0% 0% no-repeat;
+              padding-left: 50px;
+              padding-top: 5px;
+            } 
+
+            &--photo
+            {
+              background: url(../images/bonus/xs/photo.png)  0% 0% no-repeat;
+              padding-left: 50px;
+              padding-top: 0;
+            }
+
+            &--binocular
+            {
+              background: url(../images/bonus/xs/view.png) 0% 0% no-repeat;
+              padding-left:  50px;
+              padding-top: 0;
+            }
+        } 
+    }
+}

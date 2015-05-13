@@ -42,8 +42,8 @@ $(document).ready(function(){
       });
    }); 
 
-  //tabs
-  $(function()
+   //tabs
+   $(function()
    {
       $(document).on('click', '.tabs__menu-item', function()
       {  
@@ -54,4 +54,29 @@ $(document).ready(function(){
         $(".tabs__article").eq(index).addClass("tabs__article--active");                   
       });
    }); 
+
+   //nav-menu-btn
+   $(function()
+   {
+        $(document).on('click', '.nav-btn', function()
+        {      
+
+	      	if($("header nav .head-foot__nav").length) 
+	      	{
+	  			console.log("Первое");
+	  			$('header .head-foot__nav').detach().appendTo($('header .wrapper'));
+	  			$( ".head-foot__nav" ).slideToggle("slow");
+			}  	
+	      	else
+	      	{
+	      		console.log("Второе");
+	      		$( ".head-foot__nav" ).slideToggle("slow", function()
+	      		{
+        			$('header .head-foot__nav').detach().prependTo($('header .col-8'));
+    			});	      				    		
+	      	}       		              
+	    return false;
+        });
+   }); 
+  
 }); 

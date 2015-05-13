@@ -17,15 +17,16 @@
     {      
         margin: 20px 15px; 
         text-align: right; 
+        display: block;
 
         &-item
-        {
-            display: inline-block;
+        {       
+            display: inline-block;     
             vertical-align: middle;
             font-size: 18px;                         
             padding: 5px;  
             border: 1px solid #2c2c2c;
-
+            
             a
             {
                color: #fff;
@@ -40,73 +41,9 @@
     
     .nav-btn
     {
-        display: none;                
-        input[type="checkbox"]
-        {
-            display:none;            
-        }
-
-        #nav-menu + label
-        {
-          font: 16px bold;
-          position: relative;
-          color: #444;
-          cursor: pointer;
-          display: inline-block;
-          font: normal normal normal 14px/1 FontAwesome;
-          font-size: inherit;
-          text-rendering: auto;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          transform: translate(0, 0);
-          right: 40px;
-        }
-
-        #nav-menu + label::before 
-        {
-            content: "\f0c9";
-            color: #fff;
-            font-size: 30px;
-            position: absolute;
-            background-repeat: no-repeat;
-            bottom: 0px;
-        }
+        display: none;
+        color: #fff;
+        text-align: right;
+        padding: 20px 0;                     
     }
 }
-
-@media (max-width: @resolution-small) 
-{
-    /*
-        .nav-toggle
-        {
-            display: inline-block;
-            padding: 23px;
-        } 
-    */
-
-    .nav-btn-wrap
-    {
-        display: block;
-        text-align: right;   
-        padding: 35px 0;    
-    }
-
-    .head-foot
-    {
-        &__nav
-        {    
-            display: none;            
-        }
-
-        .nav-btn
-        {            
-          display: inline-block;
-          vertical-align: middle;
-          position: absolute;
-          right: 20px;
-        }
-
-    }
-
-}
-
