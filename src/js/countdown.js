@@ -31,15 +31,15 @@ function CDT(){
 
  // Set countdown limit
  var today = new Date();
- //var tl = new Date('2020/01/01 00:00:00');
  var tl =  new Date();
  tl.setDate(today.getDate()+3);
-
 
  // You can add time's up message here
  var timer = new CountdownTimer('CDT',tl,'<span class="number-wrapper"><div class="line"></div><span class="number end">Time is up!</span></span>');
  timer.countDown();
 }
-window.onload=function(){
+
+window.onload=function()
+{
  CDT();
 }

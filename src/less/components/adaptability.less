@@ -33,6 +33,11 @@
         width: @container-width-xs;
     }   
   
+    .col-xs-0
+    {
+        width: 0;
+    }
+
     .col-xs-4
     {
         width: 33.33333333%;
@@ -47,6 +52,7 @@
     {
         width: 100%;
     }
+
     /* ////////////////////// */
     /*     Tizer-adaptive    */
     /* ////////////////////// */
@@ -135,5 +141,153 @@
               padding-top: 0;
             }
         } 
+    }
+
+    /* ////////////////////// */
+    /*        BRIEFLY         */
+    /* ////////////////////// */
+    .briefly
+    {
+        border-bottom: none;
+        padding-bottom: 0;
+        .video
+        {
+            display: none;
+        }
+    }
+
+
+    /* ////////////////////// */
+    /*        GALLERY         */
+    /* ////////////////////// */
+    .gallery
+    {
+        .section-info__title{
+            display: none;
+        }
+
+        .gallery__small
+        {
+            display: block;
+        }
+        .gallery__big
+        {
+            display: none;
+        }
+    }
+
+    /* ////////////////////// */
+    /*        ABOUT          */
+    /* ///////////////////// */
+    
+    .about
+    {
+        &__bg
+        {
+            background: url(../img/map2.jpg) 50% 100% no-repeat;  
+            background-size: cover;    
+            height: 650px;                      
+        }
+
+        &__nearest-fly-txt 
+        {            
+            font-size: 22px;
+        }
+
+        /*
+        #CDT
+        {
+          text-align: right;
+          line-height: 100px;
+          .number-wrapper
+          {
+            
+            margin-left: 32px;
+            color:#fff;
+            text-align: right;
+
+            .number
+            {
+              font-size: 32px;
+              margin-right: 5px;
+            }
+
+            .caption
+            {
+              font-size: 22px;
+            }
+          }
+        }  
+        */
+
+        &__wrapper
+        {       
+            width: @container-width-xs;
+        }
+
+
+        .ballon
+        {
+          width: 340px;
+          position: absolute;          
+          display: block;
+          text-align: left;
+
+          &--one
+          {
+            top: 0;
+            left: 10px;
+          }
+
+          &--two
+          {
+            top: 100px;
+            left: 10px;
+          }
+
+          &--three
+          {
+            top: 200px;
+            left: 10px;            
+          }
+
+          &--four
+          {
+            top: 300px;
+            left: 10px;            
+          }
+
+          &--five
+          {
+            top: 400px;
+            left: 10px;            
+          }
+
+          &__title
+          {
+            display: inline-block;
+            vertical-align: middle;
+            color: #454545;      
+            font-size: 18px;
+            line-height: 26px;
+            padding-left: 0;
+          }
+
+          &__count
+          {
+            float: left;            
+            margin-top: 10px;
+            padding-top: 12px;
+            background-image: url(../img/forma.png);
+            background-repeat: no-repeat;         
+            height: 70px;
+            width: 70px;
+            margin-left: 10px;
+            padding-left: 15px;
+            font-size: 18px;
+            background-position: 0% 0%; 
+          }
+        }  
+
     }
 }

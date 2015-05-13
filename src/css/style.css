@@ -1,9 +1,12 @@
+/* ////////////////////// */
+/*        ABOUT          */
+/* ///////////////////// */
 .about__bg {
   background: url(../img/path.png) 50% 140px no-repeat, url(../img/map2.jpg) 50% 100% no-repeat;
+  background-size: 1200px auto, cover;
   position: relative;
 }
 .about__wrapper {
-  background-size: 1140px auto, cover;
   margin-top: 95px;
   position: relative;
   min-height: 530px;
@@ -73,6 +76,7 @@
   line-height: 26px;
 }
 .about .ballon__count {
+  color: #fff;
   margin-top: 10px;
   padding-top: 12px;
   background-image: url(../img/forma.png);
@@ -675,7 +679,7 @@ fieldset {
   display: block;
 }
 /* ////////////////////// */
-/*        SLIDER         */
+/*        GALLERY         */
 /* ////////////////////// */
 .gallery__slider {
   margin-top: 60px;
@@ -694,6 +698,9 @@ fieldset {
 }
 .gallery__controls--next {
   right: -25px;
+}
+.gallery .gallery__small {
+  display: none;
 }
 .img-gallery :first-child {
   margin-left: 20px;
@@ -785,6 +792,7 @@ p {
   font-size: 32px;
   color: #444444;
   margin-bottom: 50px;
+  font-weight: bold;
 }
 .section-info__title--center {
   text-align: center;
@@ -842,6 +850,9 @@ p {
   /* ////////////////////// */
   .wrapper {
     width: 300px;
+  }
+  .col-xs-0 {
+    width: 0;
   }
   .col-xs-4 {
     width: 33.33333333%;
@@ -915,5 +926,115 @@ p {
     background: url(../images/bonus/xs/view.png) 0% 0% no-repeat;
     padding-left: 50px;
     padding-top: 0;
+  }
+  /* ////////////////////// */
+  /*        BRIEFLY         */
+  /* ////////////////////// */
+  .briefly {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .briefly .video {
+    display: none;
+  }
+  /* ////////////////////// */
+  /*        GALLERY         */
+  /* ////////////////////// */
+  .gallery .section-info__title {
+    display: none;
+  }
+  .gallery .gallery__small {
+    display: block;
+  }
+  .gallery .gallery__big {
+    display: none;
+  }
+  /* ////////////////////// */
+  /*        ABOUT          */
+  /* ///////////////////// */
+  .about {
+    /*
+        #CDT
+        {
+          text-align: right;
+          line-height: 100px;
+          .number-wrapper
+          {
+            
+            margin-left: 32px;
+            color:#fff;
+            text-align: right;
+
+            .number
+            {
+              font-size: 32px;
+              margin-right: 5px;
+            }
+
+            .caption
+            {
+              font-size: 22px;
+            }
+          }
+        }  
+        */
+  }
+  .about__bg {
+    background: url(../img/map2.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    height: 650px;
+  }
+  .about__nearest-fly-txt {
+    font-size: 22px;
+  }
+  .about__wrapper {
+    width: 300px;
+  }
+  .about .ballon {
+    width: 340px;
+    position: absolute;
+    display: block;
+    text-align: left;
+  }
+  .about .ballon--one {
+    top: 0;
+    left: 10px;
+  }
+  .about .ballon--two {
+    top: 100px;
+    left: 10px;
+  }
+  .about .ballon--three {
+    top: 200px;
+    left: 10px;
+  }
+  .about .ballon--four {
+    top: 300px;
+    left: 10px;
+  }
+  .about .ballon--five {
+    top: 400px;
+    left: 10px;
+  }
+  .about .ballon__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: #454545;
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 0;
+  }
+  .about .ballon__count {
+    float: left;
+    margin-top: 10px;
+    padding-top: 12px;
+    background-image: url(../img/forma.png);
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    background-position: 0% 0%;
   }
 }

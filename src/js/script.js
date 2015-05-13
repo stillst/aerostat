@@ -1,6 +1,7 @@
 $(document).ready(function(){
   
   //slider
+
   $(function()
   {
     $('.bxslider').bxSlider(
@@ -16,6 +17,17 @@ $(document).ready(function(){
   		prevSelector: '.gallery__controls--prev',
   		prevText: '<i class="fa  fa-2x fa-chevron-left"></i>'
 	});
+
+    $('.bxslider__small').bxSlider(
+    {
+	    auto: true,
+	    slideWidth: 400,
+	    minSlides: 1,
+	    maxSlides: 1,
+	    slideMargin: 1,
+	    pager:false,
+	});
+
 
     $('.feedbacks__slider').bxSlider(
     {
@@ -62,14 +74,12 @@ $(document).ready(function(){
         {      
 
 	      	if($("header nav .head-foot__nav").length) 
-	      	{
-	  			console.log("Первое");
+	      	{	  			
 	  			$('header .head-foot__nav').detach().appendTo($('header .wrapper'));
 	  			$( ".head-foot__nav" ).slideToggle("slow");
 			}  	
 	      	else
-	      	{
-	      		console.log("Второе");
+	      	{	      		
 	      		$( ".head-foot__nav" ).slideToggle("slow", function()
 	      		{
         			$('header .head-foot__nav').detach().prependTo($('header .col-8'));
@@ -79,4 +89,47 @@ $(document).ready(function(){
         });
    }); 
   
+/*
+    function change_options_after_resize()
+	{
+	   	if($('body').width()<360)
+	    { 
+	        console.log("Первое");
+	              	$('.bxslider').bxSlider(
+	        	    {
+	        		    auto: true,
+	        		    slideWidth: 400,
+	        		    minSlides: 1,
+	        		    maxSlides: 1,
+	        		    slideMargin: 1,
+	        		    pager:false,
+	        		    nextSelector: '.gallery__controls--next',
+	        		    nextText:'<i class="fa  fa-2x fa-chevron-right"></i>',
+	        	  		prevSelector: '.gallery__controls--prev',
+	        	  		prevText: '<i class="fa  fa-2x fa-chevron-left"></i>'
+	        		});
+
+	       
+	    }
+	    else
+	    {
+	    	console.log("Второе");
+	      	 $('.bxslider').bxSlider(
+		    {
+			    auto: true,
+			    slideWidth: 360,
+			    minSlides: 1,
+			    maxSlides: 1,
+			    slideMargin: 1,
+			    pager:false,
+			    nextSelector: '.gallery__controls--next',
+			    nextText:'<i class="fa  fa-2x fa-chevron-right"></i>',
+		  		prevSelector: '.gallery__controls--prev',
+		  		prevText: '<i class="fa  fa-2x fa-chevron-left"></i>'
+			});
+	   	}
+	}
+
+	$(window).resize(change_options_after_resize);
+	*/
 }); 
