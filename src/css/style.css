@@ -390,12 +390,6 @@
   padding: 0 18px;
   font-size: 15px;
 }
-.row [class^=col-]:first-child {
-  padding-left: 0;
-}
-.row [class^=col-]:last-child {
-  padding-right: 0;
-}
 /* ////////////////////// */
 /*       MAIN             */
 /* ////////////////////// */
@@ -487,8 +481,6 @@
   margin-left: 60px;
 }
 .cost .payment__block {
-  border: 0;
-  width: 550px;
   margin-bottom: 25px;
 }
 .cost .payment__label {
@@ -497,31 +489,28 @@
   color: #444444;
 }
 .cost .payment__label--right {
-  margin-left: 40px;
+  margin-left: 5px;
 }
 .cost .payment__select {
-  width: 355px;
+  width: 310px;
   border-radius: 3px;
-  margin-left: 40px;
   height: 30px;
 }
 .cost .payment__select--mini {
   width: 90px;
   border-radius: 3px;
-  margin-left: 11px;
+  margin-left: 13px;
 }
 .cost .payment__input {
   background: url(../img/icon_human.png) 1% 50% no-repeat;
-  width: 355px;
+  width: 310px;
   border-radius: 3px;
   margin: 0;
   padding: 0;
   height: 30px;
-  margin-left: 53px;
 }
 .cost .payment__input--tel {
   background: url(../img/icon_phone.png) 1% 50% no-repeat;
-  margin-left: 108px;
 }
 .cost .payment .cost-input::-webkit-input-placeholder {
   opacity: 1;
@@ -555,9 +544,6 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.cost .payment input {
-  position: absolute;
-}
 .cost .payment input[type="text"]::-webkit-input-placeholder {
   position: relative;
   left: 30px;
@@ -567,7 +553,6 @@
   left: 30px;
 }
 .total__txt {
-  margin-left: 18px;
   font-size: 18px;
   font-weight: bold;
   color: #444444;
@@ -596,7 +581,7 @@
 /*        questions       */
 /* ////////////////////// */
 .questions {
-  margin-top: 160px;
+  padding-top: 160px;
 }
 .questions__list {
   text-decoration: none;
@@ -652,12 +637,18 @@
   display: none;
   list-style: none;
 }
+.tabs__article h2 {
+  display: none;
+}
 .tabs__article p,
 .tabs__article ul {
   margin-bottom: 20px;
 }
 .tabs__article--active {
   display: block;
+}
+.tabs__article h2 {
+  font-weight: bold;
 }
 /* ////////////////////// */
 /*        GALLERY         */
@@ -833,13 +824,40 @@ p {
     width: 300px;
   }
   .col-xs-0 {
-    width: 0;
+    display: none!important;
+  }
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
   }
   .col-xs-4 {
     width: 33.33333333%;
   }
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
   .col-xs-8 {
     width: 66.66666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-11 {
+    width: 91.66666667%;
   }
   .col-xs-12 {
     width: 100%;
@@ -889,8 +907,8 @@ p {
     font-weight: normal;
   }
   .bonus__item--thumb {
-    background: url(../images/bonus/xs/like.png) 8% 0% no-repeat;
-    padding-left: 70px;
+    background: url(../images/bonus/xs/like.png) 0% 0% no-repeat;
+    padding-left: 50px;
     padding-top: 10px;
   }
   .bonus__item--glasses {
@@ -1015,8 +1033,53 @@ p {
     font-size: 18px;
     background-position: 0% 0%;
   }
+  /* ////////////////////// */
+  /*        TYPOGRAPHY     */
+  /* ///////////////////// */
   .section-info__title {
     font-size: 28px;
     font-weight: normal;
+  }
+  /* ////////////////////// */
+  /*        COST            */
+  /* ///////////////////// */
+  .cost__info {
+    display: none;
+  }
+  .cost .payment {
+    margin-left: 0;
+  }
+  .cost .payment__select--mini {
+    margin-left: 0px;
+  }
+  .cost .total__txt {
+    display: none;
+  }
+  .cost .total__price {
+    font-size: 28px;
+    margin-left: 0;
+  }
+  /* ////////////////////// */
+  /*        QUESTIONS      */
+  /* ///////////////////// */
+  .questions {
+    margin-top: 45px;
+    padding-top: 45px;
+    background-color: #f8f8f8;
+  }
+  .questions__list {
+    display: none;
+  }
+  .questions .section-info__title--xs-gone {
+    display: none;
+  }
+  .questions .tabs__menu {
+    display: none;
+  }
+  .questions .tabs__article {
+    display: block;
+  }
+  .questions h2 {
+    display: block;
   }
 }

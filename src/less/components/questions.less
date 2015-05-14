@@ -3,7 +3,7 @@
 /* ////////////////////// */
 .questions 
 {
-  margin-top:  160px;
+  padding-top:  160px;
   &__list
   {
     text-decoration: none;
@@ -79,6 +79,12 @@
 {    
   display: none;
   list-style: none;
+
+  h2
+  {
+    display: none;
+  }
+
   p, ul
   {
     margin-bottom: 20px;
@@ -87,5 +93,10 @@
   &--active
   {
     display: block;
+  }
+  
+  h2
+  {
+    font-weight: bold;
   }
 }  

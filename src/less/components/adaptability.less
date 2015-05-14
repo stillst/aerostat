@@ -35,23 +35,19 @@
   
     .col-xs-0
     {
-        width: 0;
+        display: none!important;
     }
 
-    .col-xs-4
-    {
-        width: 33.33333333%;
+   .generate-columns(@n,@i:1) when (@i=<@n)
+    {  
+        .col-xs-@{i}
+        {
+            width:(@i*100%/@n);       
+        }
+        .generate-columns(@n, (@i+1));
     }
 
-    .col-xs-8 
-    {
-        width: 66.66666667%;
-    }
-
-    .col-xs-12 
-    {
-        width: 100%;
-    }
+    .generate-columns(12);
 
     /* ////////////////////// */
     /*     Tizer-adaptive    */
@@ -115,8 +111,8 @@
             
             &--thumb 
             {
-              background: url(../images/bonus/xs/like.png) 8% 0% no-repeat;
-              padding-left: 70px;
+              background: url(../images/bonus/xs/like.png) 0% 0% no-repeat;
+              padding-left: 50px;
               padding-top: 10px;
             }
 
@@ -301,6 +297,10 @@
         }  
     }
 
+    /* ////////////////////// */
+    /*        TYPOGRAPHY     */
+    /* ///////////////////// */
+
     .section-info
     {
   
@@ -310,4 +310,77 @@
             font-weight: normal;      
         }
     }
+
+    /* ////////////////////// */
+    /*        COST            */
+    /* ///////////////////// */
+    .cost
+    {
+        &__info 
+        {
+            display: none;
+        }
+        .payment 
+        {
+            margin-left: 0;
+
+            &__select 
+            {
+              &--mini
+              {
+                margin-left: 0px;
+              }
+            }
+        }
+
+        .total 
+        {
+            &__txt
+            {
+                display: none;
+            }
+            &__price 
+            {
+              font-size:28px;
+              margin-left: 0;
+            }
+        }
+    }
+    
+    /* ////////////////////// */
+    /*        QUESTIONS      */
+    /* ///////////////////// */
+    .questions
+    {
+        margin-top:  45px;
+        padding-top:  45px;
+        background-color: #f8f8f8;
+
+        &__list
+        {
+            display: none;
+        }
+
+        .section-info__title--xs-gone
+        {
+            display: none;
+        }
+
+        .tabs__menu
+        {
+            display: none;
+        }
+
+        .tabs__article 
+        {    
+          display: block;
+        }  
+
+        h2
+        {
+            display: block;
+        }
+    }
+    
+
 }
