@@ -1,8 +1,11 @@
+/* ////////////////////// */
+/*      CONTACTS          */
+/* ////////////////////// */
 .contacts
 {
 
   background: url(../img/sky-address.jpg) no-repeat;
-  height: 468px;
+  height: 470px;
   text-align: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -10,17 +13,31 @@
   clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 20%);
 
   .airport 
-  {
-    text-align: center;
+  {   
     padding-bottom: 60px;
+    padding-top: 70px;
+    position: relative; 
+
+    :after 
+    {  
+        background: url(../img/plane.png) 5% 0px no-repeat;
+        content: "";
+        width: 62px;
+        height: 62px;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
 
     &__address 
     {
       font-size: 26px;
       line-height: 26px;
       color: #2b2b2b;
-      text-align: center;
-      margin-top: 30px;
+      margin-top: 30px;      
     }
 
     &__text 
@@ -33,78 +50,90 @@
 
     &__img
     {
-      text-align: center;
       margin-top: 50px;
     }
   }
-}
 
+  .icons 
+  {
+    padding: 0;
+    margin: 0;
+    text-align: left;  
 
-.office:after {
-  background: url(../img/address-item.png) 5% 0px no-repeat;
-  content: "";
-  width: 50px;
-  height: 100px;
-  display: block;
-  position: absolute;
-  bottom: 30px;
-}
-.office 
-{
-  text-align: center;
-  position: relative;
-  margin-right: 10px;
+    img
+    {
+      margin-top: 24px;
+      margin-right: 10px;
+    }
 
-  &__title
+  }
+
+  .mail
   {
     font-size: 22px;
     line-height: 26px;
-    color: #2b2b2b;
+    color: #444444; 
+    text-align: left;   
+    position: relative;
+    padding-left: 30px;
+    &:after
+    {
+        background: url(../img/mail.png) no-repeat;
+        content: "";
+        width: 23px;
+        height: 23px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+    &__href
+    {
+      border-bottom: 1px solid #444444;
+      color: #444444;
+    }
   }
 
-  &__address 
+  .office 
   {
-    font-family: "Fira Sans Italic", sans-serif;
-    font-style: italic;
-    font-size: 20px;
-    line-height: 26px;
-    color: #525252;
-    margin-bottom: 18px;
-  }
-
-  &__tel
-  {
-    font-size: 26px;
-    line-height: 26px;
-    color: #2b2b2b;
-  }
-    
-}
-
-.icons 
-{
-  padding: 0;
-  margin: 0;
-  margin-left: -160px;
-
-  img
-  {
-    margin-top: 24px;
+    position: relative;
     margin-right: 10px;
-  }
 
-}
+    &:after 
+    {
+      background: url(../img/address-item.png) 5% 0px no-repeat;
+      content: "";
+      width: 50px;
+      height: 100px;
+      display: block;
+      position: absolute;
+      bottom: 30px;
+    }
 
-.mail
-{
-  font-family: "Fira Sans Regular";
-  font-size: 22px;
-  line-height: 26px;
-  color: #444444; 
-  margin-left: 10px;
+    &__title
+    {
+      font-size: 22px;
+      line-height: 26px;
+      color: #2b2b2b;
+    }
 
-  &__href
-  {
-    border-bottom: 1px solid #444444;
+    &__address 
+    {
+      font-family: "Fira Sans Italic", sans-serif;
+      font-style: italic;
+      font-size: 20px;
+      line-height: 26px;
+      color: #525252;
+      margin-bottom: 18px;
+    }
+
+    &__tel
+    {
+      font-size: 26px;
+      line-height: 26px;
+      color: #2b2b2b;
+    }
+      
   }
 }

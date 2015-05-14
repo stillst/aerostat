@@ -42,6 +42,17 @@ $(document).ready(function(){
   		prevSelector: '.feedbacks__controls--prev',
   		prevText: '<i class="fa fa-chevron-left"></i>'
 	});
+
+	$('.feedbacks__slider--small').bxSlider(
+    {
+	    auto: true,
+	    slideWidth: 350,
+	    minSlides: 1,
+	    maxSlides: 1,
+	    slideMargin: 1,
+	});
+
+	
   });
 
   //dropdownlist

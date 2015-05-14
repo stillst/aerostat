@@ -126,9 +126,12 @@
   background: url(../images/bonus/view.png) 0% 60% no-repeat;
   padding-left: 100px;
 }
+/* ////////////////////// */
+/*      CONTACTS          */
+/* ////////////////////// */
 .contacts {
   background: url(../img/sky-address.jpg) no-repeat;
-  height: 468px;
+  height: 470px;
   text-align: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -136,14 +139,26 @@
   clip-path: polygon(50% 0%, 100% 19%, 100% 100%, 0 100%, 0 20%);
 }
 .contacts .airport {
-  text-align: center;
   padding-bottom: 60px;
+  padding-top: 70px;
+  position: relative;
+}
+.contacts .airport :after {
+  background: url(../img/plane.png) 5% 0px no-repeat;
+  content: "";
+  width: 62px;
+  height: 62px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .contacts .airport__address {
   font-size: 26px;
   line-height: 26px;
   color: #2b2b2b;
-  text-align: center;
   margin-top: 30px;
 }
 .contacts .airport__text {
@@ -153,10 +168,44 @@
   margin-top: 22px;
 }
 .contacts .airport__img {
-  text-align: center;
   margin-top: 50px;
 }
-.office:after {
+.contacts .icons {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.contacts .icons img {
+  margin-top: 24px;
+  margin-right: 10px;
+}
+.contacts .mail {
+  font-size: 22px;
+  line-height: 26px;
+  color: #444444;
+  text-align: left;
+  position: relative;
+  padding-left: 30px;
+}
+.contacts .mail:after {
+  background: url(../img/mail.png) no-repeat;
+  content: "";
+  width: 23px;
+  height: 23px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.contacts .mail__href {
+  border-bottom: 1px solid #444444;
+  color: #444444;
+}
+.contacts .office {
+  position: relative;
+  margin-right: 10px;
+}
+.contacts .office:after {
   background: url(../img/address-item.png) 5% 0px no-repeat;
   content: "";
   width: 50px;
@@ -165,17 +214,12 @@
   position: absolute;
   bottom: 30px;
 }
-.office {
-  text-align: center;
-  position: relative;
-  margin-right: 10px;
-}
-.office__title {
+.contacts .office__title {
   font-size: 22px;
   line-height: 26px;
   color: #2b2b2b;
 }
-.office__address {
+.contacts .office__address {
   font-family: "Fira Sans Italic", sans-serif;
   font-style: italic;
   font-size: 20px;
@@ -183,30 +227,14 @@
   color: #525252;
   margin-bottom: 18px;
 }
-.office__tel {
+.contacts .office__tel {
   font-size: 26px;
   line-height: 26px;
   color: #2b2b2b;
 }
-.icons {
-  padding: 0;
-  margin: 0;
-  margin-left: -160px;
-}
-.icons img {
-  margin-top: 24px;
-  margin-right: 10px;
-}
-.mail {
-  font-family: "Fira Sans Regular";
-  font-size: 22px;
-  line-height: 26px;
-  color: #444444;
-  margin-left: 10px;
-}
-.mail__href {
-  border-bottom: 1px solid #444444;
-}
+/* ////////////////////// */
+/*      FEEDBACKS         */
+/* ////////////////////// */
 .feedbacks {
   text-align: center;
   margin-bottom: 80px;
@@ -238,6 +266,8 @@
   margin: 0;
   padding: 0;
   margin-top: 50px;
+  height: 100px;
+  width: 100px;
 }
 .feedbacks .feedback__name {
   font-size: 22px;
@@ -246,11 +276,13 @@
   margin-top: 30px;
 }
 .feedbacks .feedback__text {
-  font-family: "Fira Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   margin-top: 10px;
+}
+.feedbacks__small {
+  display: none;
 }
 .feedback__text {
   font-style: italic;
@@ -301,21 +333,20 @@
 .instructor__name {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   margin-top: 30px;
 }
 .instructor__profession {
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   margin-top: 10px;
 }
 .instructor__photo {
   position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
   margin-top: 50px;
+}
+.instructor__photo img {
+  height: 150px;
+  width: 150px;
 }
 .instructor__photo:before {
   content: "";
@@ -323,8 +354,8 @@
   height: 65px;
   display: block;
   position: absolute;
-  right: -20px;
-  bottom: -20px;
+  right: 40px;
+  bottom: -10px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -594,6 +625,7 @@
   clear: both;
   float: left;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .questions__list dd {
   font-style: italic;
@@ -699,7 +731,7 @@
   width: 180px;
   height: 180px;
   font-size: 42px;
-  padding: 75px 40px;
+  padding: 75px 0;
   border: 5px solid #fff;
   border-radius: 100px;
 }
@@ -1081,5 +1113,99 @@ p {
   }
   .questions h2 {
     display: block;
+  }
+  /* ////////////////////// */
+  /*       STATISTIC        */
+  /* ////////////////////// */
+  .stat {
+    background: url(../img/paysage.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    height: 525px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .stat__numbers {
+    float: left;
+    font-size: 26px;
+    height: 90px;
+    width: 90px;
+    padding: 30px 0;
+  }
+  .stat__text {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 115px;
+  }
+  .stat__wrapper {
+    padding: 0;
+  }
+  .stat__cell {
+    padding: 20px 0;
+  }
+  /* ////////////////////// */
+  /*       INSTRUCTORS      */
+  /* ////////////////////// */
+  .instructor {
+    text-align: left;
+  }
+  .instructor__photo {
+    float: left;
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+  .instructor__photo img {
+    width: 90px;
+    height: 90px;
+  }
+  .instructor__photo:before {
+    display: none;
+  }
+  .instructor__name {
+    padding-top: 30px;
+  }
+  .instructor__profession {
+    padding-top: 0;
+  }
+  /* ////////////////////// */
+  /*      FEEDBACKS         */
+  /* ////////////////////// */
+  .feedbacks__big {
+    display: none;
+  }
+  .feedbacks__small {
+    display: block;
+  }
+  /* ////////////////////// */
+  /*      CONTACTS          */
+  /* ////////////////////// */
+  .contacts {
+    height: 740px;
+    -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+  }
+  .contacts .office {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .contacts .office:after {
+    background: url(../img/address-item.png) no-repeat;
+    top: 0;
+    left: 0;
+  }
+  .contacts .office__title {
+    padding-left: 60px;
+  }
+  .contacts .office__address {
+    padding-left: 60px;
+  }
+  .contacts .office__tel {
+    padding-left: 60px;
+  }
+  .contacts .mail {
+    padding-left: 60px;
+  }
+  .contacts .icons {
+    text-align: center;
   }
 }

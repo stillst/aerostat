@@ -381,6 +381,143 @@
             display: block;
         }
     }
-    
 
+    /* ////////////////////// */
+    /*       STATISTIC        */
+    /* ////////////////////// */    
+    .stat 
+    {
+        background: url(../img/paysage.jpg) 50% 100% no-repeat;
+        background-size: cover;
+        height: 525px;
+        width: 100%;   
+        margin-top: 0; 
+
+        &__numbers
+        {
+          float: left;
+          font-size: 26px; 
+          height: 90px;
+          width: 90px;
+          padding: 30px 0;
+        }
+
+        &__text
+        {          
+          text-align: left;
+          font-size: 20px;
+          margin-top: 30px;
+          margin-left: 115px;
+        }      
+
+        &__wrapper
+        {
+            padding: 0;
+        }
+
+        &__cell
+        {
+           padding: 20px 0;
+        }
+    }
+
+    /* ////////////////////// */
+    /*       INSTRUCTORS      */
+    /* ////////////////////// */
+
+    .instructor
+    {
+        text-align: left;
+
+        &__photo
+        {
+          
+            float: left; 
+            margin-top: 50px; 
+            margin-right: 20px;
+
+            img
+            {
+                width: 90px;
+                height: 90px;
+            }            
+
+            &:before
+            {
+                display: none;
+            }
+        }
+
+        &__name
+        {
+            padding-top: 30px;
+        }
+
+        &__profession
+        {    
+            padding-top: 0;
+        }
+    }
+
+    /* ////////////////////// */
+    /*      FEEDBACKS         */
+    /* ////////////////////// */
+
+    .feedbacks
+    {
+        &__big
+        {
+            display: none;
+        }
+        &__small
+        {
+            display: block;
+        }
+    }
+
+    /* ////////////////////// */
+    /*      CONTACTS          */
+    /* ////////////////////// */
+
+    .contacts
+    {
+        height: 740px;
+        -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+        clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+        .office
+        {
+            text-align: left;
+            padding-bottom: 30px;
+            &:after 
+            {
+              background: url(../img/address-item.png) no-repeat;
+              top: 0;
+              left: 0;
+            }
+            &__title
+            {
+              padding-left: 60px;
+            }
+
+            &__address 
+            {
+               padding-left: 60px;
+            }
+
+            &__tel
+            {
+                padding-left: 60px;
+            }
+        }
+
+        .mail
+        {
+            padding-left: 60px;
+        }
+
+        .icons
+        {
+            text-align: center;
+        }
+    }
 }
