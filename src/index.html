@@ -207,52 +207,73 @@
 				<div class="row">
 					<div class="col-6">
 						<h2 class="section-info__title section-info__title--left">Расчитать стоимость</h2>
-						<div class="cost-info">
-							<p class="cost-text paragraph">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
-							<p class="cost-text paragraph">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
-							<p class="cost-text">Выбирайте, куда мы полетим сегодня!</p>
+						<div class="cost__info">
+							<p class="cost__text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+							<p class="cost__text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
+							<p class="cost__text">Выбирайте, куда мы полетим сегодня!</p>
 						</div>
 					</div>
 					<div class="col-6">
-						<form>
-							<fieldset>
-								<label class="cost-label">Маршрут полёта: <select class="cost-select-large"><option>на запад</option><option>на восток</option><option>на север</option><option>на юг</option></select></label>
+						<form class="payment">
+							<fieldset class="payment__block">
+								<label class="payment__label">Маршрут полёта: 
+									<select class="payment__select">
+										<option>на запад</option>
+										<option>на восток</option>
+										<option>на север</option>
+										<option>на юг</option>
+									</select>
+								</label>
 							</fieldset>
-							<fieldset>
-								<label class="cost-label-mini">Количество человек: <select class="cost-select-mini">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-								</select></label>
-								<label class="cost-label-mini"> Из них детей: <select class="cost-select-mini cost-select-left">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-								</select></label>
+							<fieldset class="payment__block">
+								<label class="payment__label">Количество человек: 
+									<select class="payment__select payment__select--mini">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+									</select>
+								</label>
+								<label class="payment__label payment__label--right"> Из них детей: 
+									<select class="payment__select payment__select--mini">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+									</select>
+								</label>
 							</fieldset>
-							<fieldset><label class="cost-label">Имя и фамилия:<input class="cost-input " type="text" placeholder="Поля Фокус" maxlength="20"></label></fieldset>
-							<fieldset><label class="cost-label">Телефон:<input class="cost-input cost-input-large" type="text" placeholder="89216574566" maxlength="20"></label></fieldset>
-							<div class="total">
-								<p class="total-cost">
-									Стоимость:
-									<span class="total-number">9000 p.</span>
-									<button class="fly" type="submit">Полетели</button>
-								</p>
+							<fieldset class="payment__block">
+								<label class="payment__label">Имя и фамилия:
+									<input class="payment__input" type="text" placeholder="Поля Фокус" maxlength="20">
+								</label>
+							</fieldset>
+							<fieldset class="payment__block">
+								<label class="payment__label">Телефон:<input class="payment__input payment__input--tel" type="text" placeholder="89216574566" maxlength="20"></label>
+							</fieldset>
+							<div class="row total">
+								<div class="col-6">
+									<span class="total__txt">Стоимость:</span>
+									<span class="total__price">9000 p.</span>
+								</div>
+								<div class="col-6">
+									<div class="btn-order-wrap">
+										<button class="btn-order" type="submit">Полетели</button>	
+									</div>									
+								</div>
 							</div>
 						</form>
 					</div> 
 				</div>
 			</div>
 		</section>
-		<div class="questions-payment">
+		<div class="questions">
 			<div class="wrapper">
 				<div class="row">
 					<section class="col-6">

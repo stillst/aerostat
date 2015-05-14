@@ -192,33 +192,45 @@
         &__nearest-fly-txt 
         {            
             font-size: 22px;
+            line-height: 20px;
         }
 
-        /*
+        &__nearest-fly 
+        {            
+            min-height: 100px;            
+        }
+
+        &__nearest-fly 
+        {            
+            font-size: 22px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
         #CDT
         {
-          text-align: right;
-          line-height: 100px;
-          .number-wrapper
-          {
-            
-            margin-left: 32px;
-            color:#fff;
-            text-align: right;
+          text-align:center;
+          line-height: 20px;
 
+          .number-wrapper
+          {            
+             margin-left: 0px;            
             .number
             {
+              float: left;
               font-size: 32px;
               margin-right: 5px;
+              padding: 0 10px;                            
             }
 
             .caption
-            {
-              font-size: 22px;
+            {              
+                font-size: 22px;     
+                margin-right: 3px;
             }
           }
         }  
-        */
+        
 
         &__wrapper
         {       
@@ -241,53 +253,61 @@
 
           &--two
           {
-            top: 100px;
+            top: 90px;
             left: 10px;
           }
 
           &--three
           {
-            top: 200px;
+            top: 180px;
             left: 10px;            
           }
 
           &--four
           {
-            top: 300px;
+            top: 270px;
             left: 10px;            
           }
 
           &--five
           {
-            top: 400px;
+            top: 360px;
             left: 10px;            
           }
 
           &__title
           {
-            display: inline-block;
-            vertical-align: middle;
-            color: #454545;      
-            font-size: 18px;
-            line-height: 26px;
-            padding-left: 0;
+            float: right;
+            font-size: 18px;            
+            font-weight: bold;
+            margin-right: 100px; 
+            margin-top: 10px;
+
           }
 
           &__count
           {
-            float: left;            
-            margin-top: 10px;
-            padding-top: 12px;
-            background-image: url(../img/forma.png);
+            float: left;     
+            margin-top:0;                                      
+            padding-top: 10px;
+            padding-left: 13px;
+            background-image: url(../images/about/xs/balloon.png);
             background-repeat: no-repeat;         
-            height: 70px;
-            width: 70px;
-            margin-left: 10px;
-            padding-left: 15px;
+            height: 60px;
+            width: 60px;                        
             font-size: 18px;
             background-position: 0% 0%; 
           }
         }  
+    }
 
+    .section-info
+    {
+  
+        &__title
+        {
+            font-size: 28px;  
+            font-weight: normal;      
+        }
     }
 }

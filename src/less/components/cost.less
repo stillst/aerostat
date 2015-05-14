@@ -1,16 +1,147 @@
-/* ////////////////////// */
-/*        COST         */
-/* ////////////////////// */
-.cost {
-  margin-top: 90px;
+/* //////////////////////*/
+/*        COST           */
+/* //////////////////////*/
+.cost 
+{
+  	margin-top: 90px;
+
+  	&__info 
+	{
+	  	margin-top: 50px;
+	}
+
+	&__text 
+	{  
+	  font-style: italic;
+	  font-size: 18px;
+	  line-height: 24px;
+	  color: #444444;
+	  margin-bottom: 30px;
+	}
+
+	.payment 
+	{
+		margin-left: 60px;
+
+		&__block
+		{
+			border: 0;	 
+			width: 550px;
+			margin-bottom: 25px;
+		}
+
+		&__label
+		{
+			font-size: 18px;
+			line-height: 40px;
+			color: #444444;
+
+			&--right
+			{
+ 				margin-left: 40px;
+			}
+		}
+
+		&__select 
+		{
+		  width: 355px;
+		  border-radius: 3px;
+		  margin-left: 40px;
+		  height: 30px;
+		  
+		  &--mini
+		  {
+			width: 90px;
+			border-radius: 3px;
+			margin-left: 11px;
+		  }
+		}
+		
+		&__input
+		{
+			background: url(../img/icon_human.png) 1% 50% no-repeat;
+			width: 355px;
+			border-radius: 3px;
+			margin: 0;
+			padding: 0;
+			height: 30px;
+			margin-left: 53px;
+			
+			&--tel
+			{
+				background: url(../img/icon_phone.png) 1% 50% no-repeat;
+  				margin-left: 108px;
+			}
+		}
+
+
+		.cost-input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+		.cost-input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+		.cost-input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+		.cost-input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+		.cost-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+		.cost-input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+		.cost-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+		.cost-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+		input
+		{
+		  position: absolute;
+		}
+
+		input[type="text"]::-webkit-input-placeholder 
+		{
+		    position: relative;
+		    left: 30px;
+		} 
+
+		input[type="text"]::-moz-placeholder 
+		{
+		    position: relative;
+		    left: 30px;
+		}
+
+	}
 }
-.cost-info {
-  margin-top: 50px;
+
+.total 
+{
+	&__txt
+	{
+		margin-left: 18px;
+		font-size: 18px;
+  		font-weight: bold;
+  		color: #444444;
+	}
+	
+	&__price 
+	{
+	  color: #f97e7e;
+	  font-size: 38px;
+	  margin-left: 10px;
+	  vertical-align: middle;
+	}
 }
-.cost-text {
-  font-family: "Fira Sans Italic",sans-serif;
-  font-style: italic;
+
+
+.btn-order
+{
+  -webkit-box-shadow: none;
+  box-shadow: none;
   font-size: 18px;
   line-height: 24px;
-  color: #444444;
+  background-color: #46b0dc;
+  padding: 8px 40px;
+  border-radius: 8px;
+  color: #fff;
+  
+  //`\_(``)_/`// 
+  margin-right: 12px;
+   
+}
+
+//`\_(``)_/`// 
+.btn-order-wrap
+{
+	text-align: right;
 }
