@@ -19,8 +19,7 @@
 	<!-- endbuild -->
 
 </head>
-<body>
-	
+<body>	
 		<header class="head-foot">		
 			<div class="wrapper">
 				<div class="row">
@@ -205,7 +204,8 @@
 		<section class="cost">
 			<div class="wrapper">
 				<div class="row">
-					<div class="col-6 col-xs-12">
+
+					<div class="col-5 col-xs-12">
 						<h2 class="section-info__title section-info__title--left">Рассчитать стоимость</h2>
 						<div class="cost__info">
 							<p class="cost__text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
@@ -213,14 +213,16 @@
 							<p class="cost__text">Выбирайте, куда мы полетим сегодня!</p>
 						</div>
 					</div>
+					<div class="col-1">
+					</div>
 					<div class="col-6 col-xs-12">
 						<form class="payment">
 							
 							<div class="row payment__block">
-								<div class="col-5 col-xs-12">
+								<div class="col-4 col-xs-12">
 									<label for="fly_route" class="payment__label">Маршрут полёта:</label>
 								</div>
-								<div class="col-7 col-xs-12">
+								<div class="col-8 col-xs-12">
 									<select id="fly_route" class="payment__select">
 										<option>на запад</option>
 										<option>на восток</option>
@@ -230,13 +232,13 @@
 								</div>
 							</div>							
 							
-							<div class="row payment__block">
+							<div class="row payment__block payment__block--xs">
 								<div class="col-7">
 									<div class="row">
-										<div class="col-8 col-xs-12">
+										<div class="col-8 payment__col-xs-12">
 											<label class="payment__label" for="persons_number">Количество человек:</label>
 										</div>
-										<div class="col-4 col-xs-12">
+										<div class="payment__col-4 payment__col-xs-12">
 											<select id="persons_number" class="payment__select payment__select--mini">
 												<option>1</option>
 												<option>2</option>
@@ -251,10 +253,10 @@
 								</div>
 								<div class="col-5">
 									<div class="row">
-										<div class="col-8 col-xs-12">
+										<div class="payment__col-6 payment__col-xs-12">
 											<label class="payment__label payment__label--right" for="persons_children">Из них дети:</label>
 										</div>
-										<div class="col-4 col-xs-12">
+										<div class="payment__col-6 payment__col-xs-12">
 											<select id="persons_children" class="payment__select payment__select--mini">
 												<option>1</option>
 												<option>2</option>
@@ -270,29 +272,29 @@
 							</div>
 			
 							<div class="row payment__block">
-								<div class="col-5 col-xs-12">
+								<div class="col-4 col-xs-12">
 									<label for="client_name" class="payment__label">Имя и фамилия:</label>
 								</div>
-								<div class="col-7 col-xs-12">									
+								<div class="col-8 col-xs-12">									
 									<input id="client_name" class="payment__input" type="text" placeholder="Поля Фокус">
 								</div>
 							</div>
 							
 							<div class="row payment__block">
-								<div class="col-5 col-xs-12">
+								<div class="col-4 col-xs-12">
 									<label for="client_tel" class="payment__label">Телефон:</label>
 								</div>
-								<div class="col-7 col-xs-12">									
+								<div class="col-8 col-xs-12">									
 									<input id="client_tel" class="payment__input payment__input--tel" type="text" placeholder="89216574566">
 								</div>
 							</div>
 
 							<div class="row total">
-								<div class="col-9 col-xs-5">
+								<div class="col-8 col-xs-5">
 									<span class="total__txt">Стоимость:</span>
-									<span class="total__price">9000 p.</span>
+									<span class="total__price">9000 Р</span>
 								</div>
-								<div class="col-3 col-xs-7">
+								<div class="col-4 col-xs-7">
 									<div class="btn-order-wrap">
 										<button class="btn-order" type="submit">Полетели</button>	
 									</div>									
@@ -576,6 +578,11 @@
 					</div>
 					<div class="col-8">
 						<nav>
+
+							<div class="nav-btn--up">
+								<i class="fa fa-2x fa-chevron-up"></i>
+							</div>
+
 							<ul class="head-foot__nav">
 								<li class="head-foot__nav-item"><a href="#">Кто мы</a></li>
 								<li class="head-foot__nav-item"><a href="#">Фотографии</a></li>

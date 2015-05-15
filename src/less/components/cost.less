@@ -21,8 +21,7 @@
 
 	.payment 
 	{
-		margin-left: 60px;
-
+		
 		&__block
 		{
 			margin-bottom: 25px;
@@ -42,27 +41,25 @@
 
 		&__select 
 		{
-		  width: 310px;
-		  border-radius: 3px;
-		  height: 30px;
+		  width: 356px;
+		  border-radius: 6px;
+  		  height: 40px;
+  		  float: right;
 		  
 		  &--mini
 		  {
 			width: 90px;
-			border-radius: 3px;
-			margin-left: 13px;
 		  }
 		}
 		
 		&__input
 		{
 			background: url(../img/icon_human.png) 1% 50% no-repeat;
-			width: 310px;
-			border-radius: 3px;
-			margin: 0;
-			padding: 0;
-			height: 30px;
-			
+			width: 355px;
+			border-radius: 6px;
+			height: 40px;
+			float: right;			
+
 			&--tel
 			{
 				background: url(../img/icon_phone.png) 1% 50% no-repeat;  				
@@ -83,14 +80,33 @@
 		{
 		    position: relative;
 		    left: 30px;
+		    color:#000;
+	
+		  
 		} 
 
 		input[type="text"]::-moz-placeholder 
 		{
 		    position: relative;
 		    left: 30px;
+		    color:#000;
+		   
+		    
 		}
 
+		.payment__col-6
+		{
+		    display: inline-block;
+		    vertical-align: top; 
+		    width: 45%;
+		    margin-left: 4px;
+		}
+		.payment__col-4
+		{
+			display: inline-block;
+		    vertical-align: top; 
+		    width: 25%;
+		}
 	}
 }
 
@@ -122,11 +138,7 @@
   background-color: #46b0dc;
   padding: 8px 40px;
   border-radius: 8px;
-  color: #fff;
-
-  //`\_(``)_/`// 
-  margin-right: 12px;
-   
+  color: #fff;   
 }
 
 //`\_(``)_/`// 

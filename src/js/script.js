@@ -46,7 +46,7 @@ $(document).ready(function(){
 	$('.feedbacks__slider--small').bxSlider(
     {
 	    auto: true,
-	    slideWidth: 350,
+	    slideWidth: 400,
 	    minSlides: 1,
 	    maxSlides: 1,
 	    slideMargin: 1,
@@ -99,6 +99,31 @@ $(document).ready(function(){
 	    return false;
         });
    }); 
+
+   //nav-menu-btn-footer
+   $(function()
+   {
+        $(document).on('click', '.nav-btn--up', function()
+        {      
+
+	      	if($("footer nav .head-foot__nav").length) 
+	      	{	  			
+	  			$('footer .head-foot__nav').detach().prependTo($('footer .col-8'));
+	  			$( ".head-foot__nav" ).slideToggle("slow");
+			}  	
+	      	else
+	      	{	      		
+	      		$(".head-foot__nav" ).slideToggle("slow", function()
+	      		{
+        			$('footer .head-foot__nav').detach().prependTo($('footer .wrapper'));
+    			});	      				    		
+	      	}       		              
+	    return false;
+        });
+   }); 
+  
+
+
   
 /*
     function change_options_after_resize()

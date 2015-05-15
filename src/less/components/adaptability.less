@@ -12,6 +12,7 @@
             text-align: right;
             display: none;
             border-top: 2px solid #fff;  
+            border-bottom: 2px solid #fff;  
 
             &-item
             {
@@ -19,7 +20,7 @@
             }     
         }
 
-        .nav-btn
+        .nav-btn, .nav-btn--up
         {            
           display: block;
         }
@@ -94,7 +95,7 @@
     }
 
     /* ////////////////////// */
-    /*        BONUS          */
+    /*        BONUS-adaptive  */
     /* ////////////////////// */
 
     .bonus 
@@ -140,7 +141,7 @@
     }
 
     /* ////////////////////// */
-    /*        BRIEFLY         */
+    /*     BRIEFLY-adaptive   */
     /* ////////////////////// */
     .briefly
     {
@@ -154,7 +155,7 @@
 
 
     /* ////////////////////// */
-    /*        GALLERY         */
+    /*   GALLERY-adaptive     */
     /* ////////////////////// */
     .gallery
     {
@@ -173,7 +174,7 @@
     }
 
     /* ////////////////////// */
-    /*        ABOUT          */
+    /*    ABOUT-adaptive     */
     /* ///////////////////// */
     
     .about
@@ -298,7 +299,7 @@
     }
 
     /* ////////////////////// */
-    /*        TYPOGRAPHY     */
+    /*    TYPOGRAPHY-adaptive */
     /* ///////////////////// */
 
     .section-info
@@ -312,7 +313,7 @@
     }
 
     /* ////////////////////// */
-    /*        COST            */
+    /*    COST-adaptive       */
     /* ///////////////////// */
     .cost
     {
@@ -320,16 +321,40 @@
         {
             display: none;
         }
+
         .payment 
         {
-            margin-left: 0;
+
+            &__label
+            {
+                font-weight: bold;
+            }
 
             &__select 
             {
+              width: 310px;
+
               &--mini
               {
-                margin-left: 0px;
+                width: 75px;
+                float: left;
               }
+            }
+
+            &__input
+            {
+                width: 310px;
+            }
+
+            .payment__col-xs-12
+            {   
+                width: 100%;
+                padding: 0;
+            }
+
+            .payment__block--xs
+            {
+                margin-left: 0;
             }
         }
 
@@ -345,6 +370,8 @@
               margin-left: 0;
             }
         }
+
+
     }
     
     /* ////////////////////// */
