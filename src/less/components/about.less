@@ -7,7 +7,7 @@
   {
     background: url(../img/path.png) 50% 140px no-repeat,
     url(../img/map2.jpg) 50% 100% no-repeat;    
-    background-size: 1200px auto, cover;
+    background-size: @container-width auto, cover;
     position: relative;
   }
 
@@ -65,7 +65,7 @@
 
   .ballon
   {
-    width: 120px;
+   
     position: absolute;
     text-align: center;
     text-align: -webkit-center;
@@ -73,7 +73,7 @@
     &--one
     {
       top: 180px;
-      left: 10px;
+      left: 0;
     }
 
     &--two
@@ -84,19 +84,21 @@
 
     &--three
     {
-      left: 540px;
       top: 20px;
+      left: 0;            
+      right: 0;
+      margin: 0 auto;
     }
 
     &--four
     {
-      left: 840px;
+      right: 280px;
       top: 150px;
     }
 
     &--five
     {
-       left: 1060px;
+       right: 0;
        top: 180px;
     }
 
