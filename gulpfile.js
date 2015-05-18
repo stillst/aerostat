@@ -19,8 +19,13 @@ gulp.task('clean', function () {
 
 // Копирование статики
 gulp.task('copy', function () {
-    return gulp.src('src/img/*')
-     .pipe(gulp.dest('dist/img/'));   
+    return gulp.src('src/images/**/*')
+     .pipe(gulp.dest('dist/images/'));   
+});
+
+gulp.task('copy_fonts', function () {
+    return gulp.src('src/bower/font-awesome/fonts/*')
+     .pipe(gulp.dest('dist/fonts/'));   
 });
 
 
@@ -99,4 +104,4 @@ gulp.task('watch', function () {
 gulp.task('default', ['connect', 'watch']);
 
 // Сборка проекта
-gulp.task('compile', ['dist', 'copy']);
+gulp.task('compile', ['dist', 'copy' , 'copy_fonts']);

@@ -2,9 +2,10 @@
 /*        ABOUT          */
 /* ///////////////////// */
 .about__bg {
-  background: url(../img/path.png) 50% 140px no-repeat, url(../img/map2.jpg) 50% 100% no-repeat;
+  background: url(../images/about/path.png) 50% 140px no-repeat, url(../images/about/map.jpg) 50% 100% no-repeat;
   background-size: 1170px auto, cover;
   position: relative;
+  height: 650px;
 }
 .about__wrapper {
   margin-top: 95px;
@@ -131,7 +132,7 @@
 /*      CONTACTS          */
 /* ////////////////////// */
 .contacts {
-  background: url(../img/sky-address.jpg) no-repeat;
+  background: url(../images/contacts/sky-address.jpg) no-repeat;
   height: 470px;
   text-align: center;
   -webkit-background-size: cover;
@@ -145,7 +146,7 @@
   position: relative;
 }
 .contacts .airport :after {
-  background: url(../img/plane.png) 5% 0px no-repeat;
+  background: url(../images/contacts/plane.png) 5% 0px no-repeat;
   content: "";
   width: 62px;
   height: 62px;
@@ -189,7 +190,7 @@
   padding-left: 30px;
 }
 .contacts .mail:after {
-  background: url(../img/mail.png) no-repeat;
+  background: url(../images/contacts/mail.png) no-repeat;
   content: "";
   width: 23px;
   height: 23px;
@@ -207,7 +208,7 @@
   margin-right: 10px;
 }
 .contacts .office:after {
-  background: url(../img/address-item.png) 5% 0px no-repeat;
+  background: url(../images/contacts/address-item.png) 5% 0px no-repeat;
   content: "";
   width: 50px;
   height: 100px;
@@ -221,7 +222,6 @@
   color: #2b2b2b;
 }
 .contacts .office__address {
-  font-family: "Fira Sans Italic", sans-serif;
   font-style: italic;
   font-size: 20px;
   line-height: 26px;
@@ -427,7 +427,7 @@
 /*       MAIN             */
 /* ////////////////////// */
 .tizer {
-  background-image: url(../images/background_tizer.jpg);
+  background-image: url(../images/tizer/background_tizer.jpg);
   background-size: cover;
   min-height: 645px;
   -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
@@ -485,7 +485,7 @@
   margin: 0 auto;
 }
 .arrow:after {
-  content: url(../img/arrow.png);
+  content: url(../images/tizer/arrow.png);
   text-align: center;
   display: inline-block;
   position: absolute;
@@ -531,14 +531,14 @@
   width: 90px;
 }
 .cost .payment__input {
-  background: url(../img/icon_human.png) 1% 50% no-repeat;
+  background: url(../images/cost/icon_human.png) 1% 50% no-repeat;
   width: 355px;
   border-radius: 6px;
   height: 40px;
   float: right;
 }
 .cost .payment__input--tel {
-  background: url(../img/icon_phone.png) 1% 50% no-repeat;
+  background: url(../images/cost/icon_phone.png) 1% 50% no-repeat;
 }
 .cost .payment .cost-input::-webkit-input-placeholder {
   opacity: 1;
@@ -631,10 +631,22 @@
   font-size: 18px;
   border-bottom: 1px dashed #444444;
   display: inline-block;
-  clear: both;
   float: left;
+  clear: both;
+  position: relative;
   margin-bottom: 10px;
+  padding-left: 15px;
   cursor: pointer;
+}
+.questions__list dt:after {
+  content: "";
+  background: url(../images/questions/down.png) 0% 0% no-repeat;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 20%;
 }
 .questions__list dd {
   font-style: italic;
@@ -649,8 +661,11 @@
   display: table;
   clear: both;
 }
-.questions__list .questions__active {
+.questions__list .questions__active + dd {
   display: block;
+}
+.questions__list .questions__active:after {
+  background: url(../images/questions/up.png) 0% 0% no-repeat;
 }
 /* ////////////////////// */
 /*           TABS         */
@@ -730,7 +745,7 @@
 .stat {
   margin-top: 90px;
   margin-bottom: 100px;
-  background: url(../img/paysage.jpg) 50% 100% no-repeat;
+  background: url(../images/stat/stat_bg.jpg) 50% 100% no-repeat;
   height: 374px;
   width: 100%;
   background-size: cover;
@@ -992,7 +1007,7 @@ p {
   /* ///////////////////// */
   .about__bg {
     background-size: 718px auto, cover;
-    height: 650px;
+    height: 550px;
   }
   .about__nearest-fly-txt {
     font-size: 22px;
@@ -1299,7 +1314,7 @@ p {
   /*    ABOUT-adaptive     */
   /* ///////////////////// */
   .about__bg {
-    background: url(../img/map2.jpg) 50% 100% no-repeat;
+    background: url(../images/about/map.jpg) 50% 100% no-repeat;
     background-size: cover;
     height: 650px;
   }
@@ -1373,7 +1388,8 @@ p {
     margin-top: 0;
     padding-top: 10px;
     padding-left: 13px;
-    background-image: url(../images/about/xs/balloon.png);
+    background-image: url(../images/about/balloon.png);
+    background-size: 36px 55px;
     background-repeat: no-repeat;
     height: 60px;
     width: 60px;
@@ -1516,7 +1532,7 @@ p {
     padding-bottom: 30px;
   }
   .contacts .office:after {
-    background: url(../img/address-item.png) no-repeat;
+    background: url(../images/contacts/address-item.png) no-repeat;
     top: 0;
     left: 0;
   }

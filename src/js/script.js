@@ -60,8 +60,8 @@ $(document).ready(function(){
    {
       $(document).on('click', '.questions__list dt', function()
       {          
-        $(".questions__list dd").removeClass("questions__active");        
-        $(this).next('dd').addClass("questions__active");                               
+        $(".questions__list dt").removeClass("questions__active");        
+        $(this).addClass("questions__active");                               
       });
    }); 
 
