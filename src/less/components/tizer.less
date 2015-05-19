@@ -84,32 +84,23 @@
 {
 
   cursor: pointer;   
-  background: url(../images/tizer/arrow.png);
-  text-align: center; 
+  background: url(../images/tizer/arrow.png) 50% 0 no-repeat;;
   display: inline-block;    
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left:0;
   right:0; 
   margin: 0 auto; 
+  height: 40px;
+  width: 40px;
+  
 
   &:hover
   {
-    bottom: 10px;
-  }   
-
-
-  /*
-    display: inline-block;
-    cursor: pointer;
-    background: url(../images/tizer/arrow.png) 0 0 no-repeat;
-    background-size: 10px 10px;
-    text-align: center; 
-    display: block; 
-    position: absolute;
-     bottom: 60px; 
-    left: 0;
-    right: 10px;
-    margin: 0 auto;
-  */
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);  
+  }
 }

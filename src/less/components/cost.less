@@ -45,6 +45,13 @@
 		  border-radius: 6px;
   		  height: 40px;
   		  float: right;
+  		  outline:none; 		
+		  box-shadow:none;
+
+		  &:focus
+		  {
+			border: 2px solid #aed6ff;
+		  }
 		  
 		  &--mini
 		  {
@@ -58,7 +65,14 @@
 			width: 355px;
 			border-radius: 6px;
 			height: 40px;
-			float: right;			
+			float: right;	
+			outline:none; 		
+			box-shadow:none;
+
+			&:focus
+			{
+				border: 2px solid #aed6ff;
+			}
 
 			&--tel
 			{
@@ -80,18 +94,14 @@
 		{
 		    position: relative;
 		    left: 30px;
-		    color:#000;
-	
-		  
+		    color:#000;			  
 		} 
 
 		input[type="text"]::-moz-placeholder 
 		{
 		    position: relative;
 		    left: 30px;
-		    color:#000;
-		   
-		    
+		    color:#000;		   		    
 		}
 
 		.payment__col-6
@@ -133,6 +143,8 @@
 {
   -webkit-box-shadow: none;
   box-shadow: none;
+  outline: none;
+  border: none;
   font-size: 18px;
   line-height: 24px;
   background-color: #46b0dc;
