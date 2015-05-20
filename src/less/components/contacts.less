@@ -4,8 +4,9 @@
 .contacts
 {
 
-  background: url(../images/contacts/sky-address.jpg) no-repeat;
-  height: 470px;
+  min-height: 470px;
+  min-width: @container-width;
+  background: url(../images/contacts/sky-address.jpg) no-repeat; 
   text-align: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -92,6 +93,11 @@
     {
       border-bottom: 1px solid #444444;
       color: #444444;
+      &:hover
+      {
+        border-bottom: none;
+        color: #337ba0;
+      }
     }
   }
 

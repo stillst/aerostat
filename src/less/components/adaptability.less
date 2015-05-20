@@ -1,34 +1,31 @@
 @media (max-width: @resolution-medium) and (min-width: @resolution-small) 
-{
-            
+{        
     /* ////////////////////// */
-    /*     HEADER-adaptive    */
+    /*     HEADER-medium    */
     /* ////////////////////// */
     .head-foot
     {
+        min-width: @container-width-m;
         &__nav
-        {    
-            display: none;    
-            margin: 0; 
-            text-align: right;
-            display: none;
+        {          
+            padding: 0;  
+            display: none;                
+            text-align: right;            
             border-top: 2px solid #fff;  
             border-bottom: 2px solid #fff;  
-
             &-item
             {
                 display: block;                                
             }     
         }
-
         .nav-btn, .nav-btn--up
         {            
-          display: block;
+          display: inline-block;
         }
     }
 
     /* ////////////////////// */
-    /*     Layout-adaptive    */
+    /*     Layout-medium    */
     /* ////////////////////// */
     .wrapper
     {  
@@ -47,12 +44,12 @@
 
 
     /* ////////////////////// */
-    /*     Tizer-adaptive    */
+    /*     Tizer-medium    */
     /* ////////////////////// */
     .tizer
-    {
-        height: 645px;
+    {        
         min-height: 645px;
+         min-width: @container-width-m;
         -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
         clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
 
@@ -96,7 +93,7 @@
     }
 
     /* ////////////////////// */
-    /*        BONUS-adaptive  */
+    /*     BONUS-medium       */
     /* ////////////////////// */
 
     .bonus 
@@ -139,7 +136,7 @@
     }
 
     /* ////////////////////// */
-    /*     BRIEFLY-adaptive   */
+    /*     BRIEFLY-medium   */
     /* ////////////////////// */
     .briefly
     {
@@ -152,11 +149,12 @@
     }
 
     /* ////////////////////// */
-    /*   GALLERY-adaptive     */
+    /*   GALLERY--medium     */
     /* ////////////////////// */
-    .gallery
+    .gallery    
     {
-        .section-info__title{
+        .section-info__title
+        {
             display: none;
         }
 
@@ -171,11 +169,12 @@
     }
 
     /* ////////////////////// */
-    /*    ABOUT-adaptive     */
+    /*    ABOUT-medium     */
     /* ///////////////////// */
     
     .about
     {
+        min-width: @container-width-m;
         &__bg
         {            
             background-size: @container-width-m auto, cover; 
@@ -245,7 +244,7 @@
     }
 
     /* ////////////////////// */
-    /*    COST-adaptive       */
+    /*    COST-medium       */
     /* ///////////////////// */
     .cost
     {
@@ -291,12 +290,12 @@
     }
 
     /* ////////////////////// */
-    /*   STATISTIC-adaptive   */
+    /*   STATISTIC-medium   */
     /* ////////////////////// */    
     .stat 
     {
-        height: 290px;
-        padding-top:30px;
+        padding:30px 0 0 0;
+        min-width: @container-width-m;
         &__numbers
         {
 
@@ -312,11 +311,6 @@
           font-weight: bold;
         }      
 
-        &__wrapper
-        {
-            padding: 0;
-        }
-
         &__cell
         {
            padding: 20px 0;
@@ -324,7 +318,7 @@
     }
 
     /* ////////////////////// */
-    /*       INSTRUCTORS      */
+    /*   INSTRUCTORS--medium  */
     /* ////////////////////// */
 
     .instructor
@@ -358,7 +352,7 @@
     }
 
     /* ////////////////////// */
-    /*      FEEDBACKS         */
+    /*    FEEDBACKS-medium    */
     /* ////////////////////// */
 
     .feedbacks
@@ -372,10 +366,14 @@
             display: block;
         }
     }
-
+    
+    /* ////////////////////// */
+    /*    Contacts-medium     */
+    /* ////////////////////// */
     .contacts
     {
-        height: 500px;
+        min-width: @container-width-m;
+        min-height: 500px;
         -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
         clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
         .office
@@ -383,8 +381,7 @@
             padding-bottom: 30px;
 
             &:after 
-            {
-              background: url(../img/address-item.png) no-repeat;
+            {             
               top: 0;
               left: 0;
             }
@@ -434,14 +431,15 @@
 @media (max-width: @resolution-small) 
 {        
     /* ////////////////////// */
-    /*     HEADER-adaptive    */
+    /*     HEADER-small    */
     /* ////////////////////// */
     .head-foot
     {
+        min-width: @container-width-xs;
         &__nav
         {    
             display: none;    
-            margin: 0; 
+            padding: 0; 
             text-align: right;
             display: none;
             border-top: 2px solid #fff;  
@@ -455,12 +453,12 @@
 
         .nav-btn, .nav-btn--up
         {            
-          display: block;
+          display: inline-block;
         }
     }
 
     /* ////////////////////// */
-    /*     Layout-adaptive    */
+    /*     Layout-small    */
     /* ////////////////////// */
     .wrapper
     {  
@@ -484,12 +482,12 @@
     .generate-columns(12);
 
     /* ////////////////////// */
-    /*     Tizer-adaptive    */
+    /*     Tizer-small    */
     /* ////////////////////// */
     .tizer
-    {
-        height: 300px;
+    {        
         min-height: 300px;
+         min-width: @container-width-xs;
         -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
         clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
 
@@ -528,7 +526,7 @@
     }
 
     /* ////////////////////// */
-    /*        BONUS-adaptive  */
+    /*        BONUS-small  */
     /* ////////////////////// */
 
     .bonus 
@@ -574,7 +572,7 @@
     }
 
     /* ////////////////////// */
-    /*     BRIEFLY-adaptive   */
+    /*     BRIEFLY-small   */
     /* ////////////////////// */
     .briefly
     {
@@ -588,11 +586,16 @@
 
 
     /* ////////////////////// */
-    /*   GALLERY-adaptive     */
+    /*   GALLERY-small     */
     /* ////////////////////// */
     .gallery
     {
-        .section-info__title{
+        .wrapper
+        {
+            width: 100%;
+        }
+        .section-info__title
+        {
             display: none;
         }
 
@@ -607,11 +610,12 @@
     }
 
     /* ////////////////////// */
-    /*    ABOUT-adaptive     */
+    /*    ABOUT-small     */
     /* ///////////////////// */
     
     .about
     {
+        min-width: @container-width-xs;
         &__bg
         {
             background: url(../images/about/map.jpg) 50% 100% no-repeat;  
@@ -665,74 +669,39 @@
         &__wrapper
         {       
             width: @container-width-xs;
+
         }
 
         .ballon
         {
           width: 340px;
-          position: absolute;          
-          display: block;
-          text-align: left;
-
-          &--one
-          {
-            top: 0;
-            left: 10px;
-          }
-
-          &--two
-          {
-            top: 90px;
-            left: 10px;
-          }
-
-          &--three
-          {
-            top: 180px;
-            left: 10px;            
-          }
-
-          &--four
-          {
-            top: 270px;
-            left: 10px;            
-          }
-
-          &--five
-          {
-            top: 360px;
-            left: 10px;            
-          }
+          position: static;  
+          text-align: left;  
+          clear: both;
 
           &__title
           {
-            float: right;
-            font-size: 18px;            
-            font-weight: bold;
-            margin-right: 100px; 
-            margin-top: 10px;
-
-          }
-
+            display: inline-block;
+            margin-top: 20px;
+          }  
           &__count
           {
-            float: left;     
-            margin-top:0;                                      
+            display: inline-block;
+            float: left;
             padding-top: 10px;
-            padding-left: 13px;
-            background-image: url(../images/about/balloon.png);
+            padding-left: 13px;    
             background-size:36px 55px;
             background-repeat: no-repeat;         
             height: 60px;
             width: 60px;                        
             font-size: 18px;
             background-position: 0% 0%; 
-          }
-        }  
+          }     
+        }      
     }
 
     /* ////////////////////// */
-    /*    TYPOGRAPHY-adaptive */
+    /*    TYPOGRAPHY-small */
     /* ///////////////////// */
 
     .section-info
@@ -745,7 +714,7 @@
     }
 
     /* ////////////////////// */
-    /*    COST-adaptive       */
+    /*    COST-small       */
     /* ///////////////////// */
     .cost
     {
@@ -807,7 +776,7 @@
     }
     
     /* ////////////////////// */
-    /*   QUESTIONS-adaptive   */
+    /*   QUESTIONS-small   */
     /* ///////////////////// */
     .questions
     {
@@ -842,12 +811,11 @@
     }
 
     /* ////////////////////// */
-    /*   STATISTIC-adaptive   */
+    /*   STATISTIC-small   */
     /* ////////////////////// */    
     .stat 
-    {
-        height: 525px;
-        width: 100%;   
+    {        
+        min-width: @container-width-xs;  
         margin-top: 0; 
 
         &__numbers
@@ -879,7 +847,7 @@
     }
 
     /* ////////////////////// */
-    /*       INSTRUCTORS      */
+    /*   INSTRUCTORS-small      */
     /* ////////////////////// */
 
     .instructor
@@ -917,7 +885,7 @@
     }
 
     /* ////////////////////// */
-    /*      FEEDBACKS         */
+    /*      FEEDBACKS-small  */
     /* ////////////////////// */
 
     .feedbacks
@@ -933,12 +901,13 @@
     }
 
     /* ////////////////////// */
-    /*      CONTACTS          */
+    /*      CONTACTS-small    */
     /* ////////////////////// */
 
     .contacts
     {
-        height: 740px;
+        min-width: @container-width-xs;
+        min-height: 740px;
         -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
         clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
         .office
@@ -947,7 +916,6 @@
             padding-bottom: 30px;
             &:after 
             {
-              background: url(../images/contacts/address-item.png) no-repeat;
               top: 0;
               left: 0;
             }

@@ -1,6 +1,9 @@
 /* ////////////////////// */
 /*        ABOUT          */
 /* ///////////////////// */
+.about {
+  min-width: 1170px;
+}
 .about__bg {
   background: url(../images/about/path.png) 50% 140px no-repeat, url(../images/about/map.jpg) 50% 100% no-repeat;
   background-size: 1170px auto, cover;
@@ -135,8 +138,9 @@
 /*      CONTACTS          */
 /* ////////////////////// */
 .contacts {
+  min-height: 470px;
+  min-width: 1170px;
   background: url(../images/contacts/sky-address.jpg) no-repeat;
-  height: 470px;
   text-align: center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -205,6 +209,10 @@
 .contacts .mail__href {
   border-bottom: 1px solid #444444;
   color: #444444;
+}
+.contacts .mail__href:hover {
+  border-bottom: none;
+  color: #337ba0;
 }
 .contacts .office {
   position: relative;
@@ -296,6 +304,7 @@
 /*        HEADER          */
 /* ////////////////////// */
 .head-foot {
+  min-width: 1170px;
   background-color: #2c2c2c;
 }
 .head-foot__logo {
@@ -327,8 +336,8 @@
 .head-foot .nav-btn,
 .head-foot .nav-btn--up {
   display: none;
+  float: right;
   color: #fff;
-  text-align: right;
   padding: 20px 0;
 }
 /* ////////////////////// */
@@ -428,12 +437,19 @@
   padding: 0 18px;
   font-size: 15px;
 }
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* ////////////////////// */
 /*       MAIN             */
 /* ////////////////////// */
 .tizer {
   background-image: url(../images/tizer/background_tizer.jpg);
   background-size: cover;
+  min-width: 1170px;
   min-height: 645px;
   -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
   clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
@@ -649,6 +665,7 @@
 /* ////////////////////// */
 .questions {
   padding-top: 160px;
+  padding-bottom: 90px;
 }
 .questions__list {
   text-decoration: none;
@@ -757,9 +774,6 @@
 .gallery .gallery__small {
   display: none;
 }
-.img-gallery :first-child {
-  margin-left: 20px;
-}
 .bx-wrapper {
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: none;
@@ -770,13 +784,10 @@
 /*       STATISTIC        */
 /* ////////////////////// */
 .stat {
-  margin-top: 90px;
-  margin-bottom: 100px;
   background: url(../images/stat/stat_bg.jpg) 50% 100% no-repeat;
-  height: 374px;
-  width: 100%;
+  min-width: 1170px;
   background-size: cover;
-  color: #fff;
+  padding: 60px 100px;
 }
 .stat__numbers {
   width: 180px;
@@ -785,14 +796,13 @@
   padding: 75px 0;
   border: 5px solid #fff;
   border-radius: 100px;
+  color: #fff;
 }
 .stat__text {
   font-size: 24px;
   line-height: 28px;
   margin-top: 40px;
-}
-.stat__wrapper {
-  padding: 60px 100px;
+  color: #fff;
 }
 .stat__cell {
   text-align: center;
@@ -886,12 +896,15 @@ p {
 }
 @media (max-width: 768px) and (min-width: 600px) {
   /* ////////////////////// */
-  /*     HEADER-adaptive    */
+  /*     HEADER-medium    */
   /* ////////////////////// */
+  .head-foot {
+    min-width: 718px;
+  }
   .head-foot__nav {
-    margin: 0;
-    text-align: right;
+    padding: 0;
     display: none;
+    text-align: right;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
   }
@@ -900,10 +913,10 @@ p {
   }
   .head-foot .nav-btn,
   .head-foot .nav-btn--up {
-    display: block;
+    display: inline-block;
   }
   /* ////////////////////// */
-  /*     Layout-adaptive    */
+  /*     Layout-medium    */
   /* ////////////////////// */
   .wrapper {
     width: 718px;
@@ -945,11 +958,11 @@ p {
     width: 100%;
   }
   /* ////////////////////// */
-  /*     Tizer-adaptive    */
+  /*     Tizer-medium    */
   /* ////////////////////// */
   .tizer {
-    height: 645px;
     min-height: 645px;
+    min-width: 718px;
     -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
     clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
   }
@@ -978,7 +991,7 @@ p {
     bottom: 250px;
   }
   /* ////////////////////// */
-  /*        BONUS-adaptive  */
+  /*     BONUS-medium       */
   /* ////////////////////// */
   .bonus {
     margin-top: 40px;
@@ -1008,7 +1021,7 @@ p {
     padding: 20px  60px;
   }
   /* ////////////////////// */
-  /*     BRIEFLY-adaptive   */
+  /*     BRIEFLY-medium   */
   /* ////////////////////// */
   .briefly {
     border-bottom: none;
@@ -1018,7 +1031,7 @@ p {
     margin-top: 30px;
   }
   /* ////////////////////// */
-  /*   GALLERY-adaptive     */
+  /*   GALLERY--medium     */
   /* ////////////////////// */
   .gallery .section-info__title {
     display: none;
@@ -1030,8 +1043,11 @@ p {
     display: none;
   }
   /* ////////////////////// */
-  /*    ABOUT-adaptive     */
+  /*    ABOUT-medium     */
   /* ///////////////////// */
+  .about {
+    min-width: 718px;
+  }
   .about__bg {
     background-size: 718px auto, cover;
     height: 550px;
@@ -1074,7 +1090,7 @@ p {
     rigth: 0;
   }
   /* ////////////////////// */
-  /*    COST-adaptive       */
+  /*    COST-medium       */
   /* ///////////////////// */
   .cost .m-payment-background {
     background-image: url(../images/cost/background_cost.jpg);
@@ -1101,11 +1117,11 @@ p {
     font-size: 38px;
   }
   /* ////////////////////// */
-  /*   STATISTIC-adaptive   */
+  /*   STATISTIC-medium   */
   /* ////////////////////// */
   .stat {
-    height: 290px;
-    padding-top: 30px;
+    padding: 30px 0 0 0;
+    min-width: 718px;
   }
   .stat__numbers {
     font-size: 32px;
@@ -1117,14 +1133,11 @@ p {
     font-size: 18px;
     font-weight: bold;
   }
-  .stat__wrapper {
-    padding: 0;
-  }
   .stat__cell {
     padding: 20px 0;
   }
   /* ////////////////////// */
-  /*       INSTRUCTORS      */
+  /*   INSTRUCTORS--medium  */
   /* ////////////////////// */
   .instructor__photo img {
     width: 160px;
@@ -1140,7 +1153,7 @@ p {
     padding-top: 0;
   }
   /* ////////////////////// */
-  /*      FEEDBACKS         */
+  /*    FEEDBACKS-medium    */
   /* ////////////////////// */
   .feedbacks__big {
     display: none;
@@ -1148,8 +1161,12 @@ p {
   .feedbacks__small {
     display: block;
   }
+  /* ////////////////////// */
+  /*    Contacts-medium     */
+  /* ////////////////////// */
   .contacts {
-    height: 500px;
+    min-width: 718px;
+    min-height: 500px;
     -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
     clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
   }
@@ -1157,7 +1174,6 @@ p {
     padding-bottom: 30px;
   }
   .contacts .office:after {
-    background: url(../img/address-item.png) no-repeat;
     top: 0;
     left: 0;
   }
@@ -1190,10 +1206,13 @@ p {
 }
 @media (max-width: 600px) {
   /* ////////////////////// */
-  /*     HEADER-adaptive    */
+  /*     HEADER-small    */
   /* ////////////////////// */
+  .head-foot {
+    min-width: 310px;
+  }
   .head-foot__nav {
-    margin: 0;
+    padding: 0;
     text-align: right;
     display: none;
     border-top: 2px solid #fff;
@@ -1204,10 +1223,10 @@ p {
   }
   .head-foot .nav-btn,
   .head-foot .nav-btn--up {
-    display: block;
+    display: inline-block;
   }
   /* ////////////////////// */
-  /*     Layout-adaptive    */
+  /*     Layout-small    */
   /* ////////////////////// */
   .wrapper {
     width: 310px;
@@ -1252,11 +1271,11 @@ p {
     width: 100%;
   }
   /* ////////////////////// */
-  /*     Tizer-adaptive    */
+  /*     Tizer-small    */
   /* ////////////////////// */
   .tizer {
-    height: 300px;
     min-height: 300px;
+    min-width: 310px;
     -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
     clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
   }
@@ -1284,7 +1303,7 @@ p {
     margin: 0 auto;
   }
   /* ////////////////////// */
-  /*        BONUS-adaptive  */
+  /*        BONUS-small  */
   /* ////////////////////// */
   .bonus {
     margin-top: 40px;
@@ -1316,7 +1335,7 @@ p {
     padding-top: 0;
   }
   /* ////////////////////// */
-  /*     BRIEFLY-adaptive   */
+  /*     BRIEFLY-small   */
   /* ////////////////////// */
   .briefly {
     border-bottom: none;
@@ -1326,8 +1345,11 @@ p {
     display: none;
   }
   /* ////////////////////// */
-  /*   GALLERY-adaptive     */
+  /*   GALLERY-small     */
   /* ////////////////////// */
+  .gallery .wrapper {
+    width: 100%;
+  }
   .gallery .section-info__title {
     display: none;
   }
@@ -1338,8 +1360,11 @@ p {
     display: none;
   }
   /* ////////////////////// */
-  /*    ABOUT-adaptive     */
+  /*    ABOUT-small     */
   /* ///////////////////// */
+  .about {
+    min-width: 310px;
+  }
   .about__bg {
     background: url(../images/about/map.jpg) 50% 100% no-repeat;
     background-size: cover;
@@ -1379,43 +1404,19 @@ p {
   }
   .about .ballon {
     width: 340px;
-    position: absolute;
-    display: block;
+    position: static;
     text-align: left;
-  }
-  .about .ballon--one {
-    top: 0;
-    left: 10px;
-  }
-  .about .ballon--two {
-    top: 90px;
-    left: 10px;
-  }
-  .about .ballon--three {
-    top: 180px;
-    left: 10px;
-  }
-  .about .ballon--four {
-    top: 270px;
-    left: 10px;
-  }
-  .about .ballon--five {
-    top: 360px;
-    left: 10px;
+    clear: both;
   }
   .about .ballon__title {
-    float: right;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 100px;
-    margin-top: 10px;
+    display: inline-block;
+    margin-top: 20px;
   }
   .about .ballon__count {
+    display: inline-block;
     float: left;
-    margin-top: 0;
     padding-top: 10px;
     padding-left: 13px;
-    background-image: url(../images/about/balloon.png);
     background-size: 36px 55px;
     background-repeat: no-repeat;
     height: 60px;
@@ -1424,14 +1425,14 @@ p {
     background-position: 0% 0%;
   }
   /* ////////////////////// */
-  /*    TYPOGRAPHY-adaptive */
+  /*    TYPOGRAPHY-small */
   /* ///////////////////// */
   .section-info__title {
     font-size: 28px;
     font-weight: normal;
   }
   /* ////////////////////// */
-  /*    COST-adaptive       */
+  /*    COST-small       */
   /* ///////////////////// */
   .cost__info {
     display: none;
@@ -1464,7 +1465,7 @@ p {
     margin-left: 0;
   }
   /* ////////////////////// */
-  /*   QUESTIONS-adaptive   */
+  /*   QUESTIONS-small   */
   /* ///////////////////// */
   .questions {
     margin-top: 45px;
@@ -1487,11 +1488,10 @@ p {
     display: block;
   }
   /* ////////////////////// */
-  /*   STATISTIC-adaptive   */
+  /*   STATISTIC-small   */
   /* ////////////////////// */
   .stat {
-    height: 525px;
-    width: 100%;
+    min-width: 310px;
     margin-top: 0;
   }
   .stat__numbers {
@@ -1514,7 +1514,7 @@ p {
     padding: 20px 0;
   }
   /* ////////////////////// */
-  /*       INSTRUCTORS      */
+  /*   INSTRUCTORS-small      */
   /* ////////////////////// */
   .instructor {
     text-align: left;
@@ -1538,7 +1538,7 @@ p {
     padding-top: 0;
   }
   /* ////////////////////// */
-  /*      FEEDBACKS         */
+  /*      FEEDBACKS-small  */
   /* ////////////////////// */
   .feedbacks__big {
     display: none;
@@ -1547,10 +1547,11 @@ p {
     display: block;
   }
   /* ////////////////////// */
-  /*      CONTACTS          */
+  /*      CONTACTS-small    */
   /* ////////////////////// */
   .contacts {
-    height: 740px;
+    min-width: 310px;
+    min-height: 740px;
     -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
     clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
   }
@@ -1559,7 +1560,6 @@ p {
     padding-bottom: 30px;
   }
   .contacts .office:after {
-    background: url(../images/contacts/address-item.png) no-repeat;
     top: 0;
     left: 0;
   }
