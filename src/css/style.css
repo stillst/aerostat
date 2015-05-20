@@ -656,6 +656,10 @@
   padding: 8px 40px;
   border-radius: 8px;
   color: #fff;
+  cursor: pointer;
+}
+.btn-order:hover {
+  background-color: #E35C5C;
 }
 .btn-order-wrap {
   text-align: right;
