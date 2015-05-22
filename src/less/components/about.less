@@ -25,42 +25,32 @@
 
   &__nearest-fly-txt
   {
-    line-height: 100px;
+    
     font-size: 32px;
   }
 
   &__nearest-fly 
   {
     background-color: #000;    
-    min-height: 100px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     opacity: 0.7;
     color: #fff;
+    line-height: 100px;
 
-    #CDT
+    .timer
     {
-      text-align: right;
-      line-height: 100px;
-      .number-wrapper
+      text-align: right;     
+      &__num
       {
-        
-        margin-left: 32px;
-        color:#fff;
-        text-align: right;
-        
-        .number
-        {
-          font-size: 32px;
-          margin-right: 5px;
-        }
-
-        .caption
-        {
-          font-size: 22px;
-        }
+        font-size: 32px;
+        margin-right: 5px;
+      }
+      &__txt
+      {
+        font-size: 22px;
       }
     }  
   }  

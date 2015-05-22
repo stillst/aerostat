@@ -18,33 +18,26 @@
   width: 1200px;
 }
 .about__nearest-fly-txt {
-  line-height: 100px;
   font-size: 32px;
 }
 .about__nearest-fly {
   background-color: #000;
-  min-height: 100px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   opacity: 0.7;
   color: #fff;
-}
-.about__nearest-fly #CDT {
-  text-align: right;
   line-height: 100px;
 }
-.about__nearest-fly #CDT .number-wrapper {
-  margin-left: 32px;
-  color: #fff;
+.about__nearest-fly .timer {
   text-align: right;
 }
-.about__nearest-fly #CDT .number-wrapper .number {
+.about__nearest-fly .timer__num {
   font-size: 32px;
   margin-right: 5px;
 }
-.about__nearest-fly #CDT .number-wrapper .caption {
+.about__nearest-fly .timer__txt {
   font-size: 22px;
 }
 .about .ballon {
@@ -1379,29 +1372,21 @@ p {
     line-height: 20px;
   }
   .about__nearest-fly {
-    min-height: 100px;
-  }
-  .about__nearest-fly {
     font-size: 22px;
     line-height: 50px;
     text-align: center;
+    padding: 20px 0;
   }
-  .about #CDT {
-    text-align: center;
-    line-height: 20px;
+  .about .timer {
+    text-align: right;
+    line-height: 25px;
   }
-  .about #CDT .number-wrapper {
-    margin-left: 0px;
-  }
-  .about #CDT .number-wrapper .number {
-    float: left;
+  .about .timer__num {
     font-size: 32px;
     margin-right: 5px;
-    padding: 0 10px;
   }
-  .about #CDT .number-wrapper .caption {
+  .about .timer__txt {
     font-size: 22px;
-    margin-right: 3px;
   }
   .about__wrapper {
     width: 310px;
@@ -1414,7 +1399,8 @@ p {
   }
   .about .ballon__title {
     display: inline-block;
-    margin-top: 20px;
+    vertical-align: middle;
+    margin-top: 25px;
   }
   .about .ballon__count {
     display: inline-block;

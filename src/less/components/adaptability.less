@@ -631,37 +631,25 @@
 
         &__nearest-fly 
         {            
-            min-height: 100px;            
-        }
-
-        &__nearest-fly 
-        {            
             font-size: 22px;
             line-height: 50px;
             text-align: center;
+            padding: 20px 0;
         }
         
-        #CDT
+        .timer
         {
-          text-align:center;
-          line-height: 20px;
+          text-align: right;  
+          line-height: 25px;          
 
-          .number-wrapper
-          {            
-             margin-left: 0px;            
-            .number
-            {
-              float: left;
-              font-size: 32px;
-              margin-right: 5px;
-              padding: 0 10px;                            
-            }
-
-            .caption
-            {              
-                font-size: 22px;     
-                margin-right: 3px;
-            }
+          &__num
+          {
+            font-size: 32px;
+            margin-right: 5px;
+          }
+          &__txt
+          {
+            font-size: 22px;
           }
         }  
         
@@ -682,8 +670,10 @@
           &__title
           {
             display: inline-block;
-            margin-top: 20px;
+            vertical-align: middle;   
+            margin-top: 25px;         
           }  
+
           &__count
           {
             display: inline-block;
