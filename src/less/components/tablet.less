@@ -1,0 +1,428 @@
+@media (max-width: @resolution-medium) and (min-width: @resolution-small) 
+{        
+
+    /* ////////////////////// */
+    /*     Layout-medium    */
+    /* ////////////////////// */
+    .wrapper
+    {  
+       width: @wrapper-width-m;
+    }   
+
+    .generate-m-columns(@n,@i:1) when (@i=<@n)
+     {  
+         .col-m-@{i}
+         {
+             width:(@i*100%/@n);       
+         }
+         .generate-m-columns(@n, (@i+1));
+     }
+    .generate-m-columns(12);
+
+    /* ///////////// */
+    /*     HEADER    */
+    /* ///////////// */
+    .head-foot
+    {
+        min-width: @min-block-tablet-width;
+        &__nav
+        {          
+            padding: 0;  
+            display: none;                
+            text-align: right;            
+            border-top: 2px solid #fff;  
+            border-bottom: 2px solid #fff;  
+            &-item
+            {
+                display: block;  
+                a
+                {
+                    display: inline-block;
+                }                              
+            }     
+        }
+        .js-nav-btn, .nav-btn--up
+        {            
+          display: inline-block;
+        }
+    }
+    
+    /* //////////// */
+    /*     Tizer    */
+    /* //////////// */
+    .tizer
+    {        
+        min-height: 645px;
+        min-width: @min-block-tablet-width;
+        -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+        clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+        
+        &__title
+        {
+            font-size: 44px; 
+            width: 464px;  
+            height: 90px;    
+            top: 250px;
+            left: 0;
+            right: 0;     
+            margin: 0 auto;                    
+        }
+
+        &__bonuses
+        {
+
+            &--left-top
+            {
+              left: 60px;
+              top: 50px;
+            }
+
+            &--right-top
+            {
+              top: 100px;
+              right: 20px;
+            }
+
+            &--right-bottom
+            {
+              right: 10px;
+              bottom: 250px;
+            }
+        }
+    }
+
+    /* ////////////////////// */
+    /*     BONUS-medium       */
+    /* ////////////////////// */
+
+    .bonus 
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
+        min-width: @min-block-tablet-width;
+        &__item 
+        {
+            min-height: 60px;
+            padding-top: 20px;  
+                     
+            &--thumb 
+            {
+              background-size:  45px 45px;  
+              padding: 20px 60px;       
+            }
+
+            &--glasses
+            {
+              background: url(../images/bonus/glasses.png) 0% 50% no-repeat;
+              background-size:  50px 25px;
+              padding: 20px  60px; 
+            } 
+
+            &--photo
+            {
+               background: url(../images/bonus/photo.png) 0% 50% no-repeat;
+               background-size:  45px 35px;
+               padding: 20px  60px; ;        
+            }
+
+            &--binocular
+            {
+              background-size:  50px 25px;
+              padding: 20px  60px; ;       
+            }
+        } 
+    }
+
+    /* ////////////////////// */
+    /*     BRIEFLY-medium   */
+    /* ////////////////////// */
+    .briefly
+    {
+        border-bottom: none;
+        padding-bottom: 0;
+        min-width: @min-block-tablet-width;
+        .video
+        {
+            margin-top: 30px;
+        }
+    }
+
+    /* ////////////////////// */
+    /*   GALLERY--medium     */
+    /* ////////////////////// */
+    .gallery    
+    {
+        .section-info__title
+        {
+            display: none;
+        }
+
+        .gallery__small
+        {
+            display: block;
+        }
+        .gallery__big
+        {
+            display: none;
+        }
+    }
+
+    /* ////////////////////// */
+    /*    ABOUT-medium     */
+    /* ///////////////////// */
+    
+    .about
+    {
+        //min-width: @container-width-m;
+        &__bg
+        {            
+          //  background-size: @container-width-m auto, cover; 
+            height: 550px;                      
+        }
+
+        &__nearest-fly-txt 
+        {            
+            font-size: 22px;
+            line-height: 20px;
+        }
+
+        &__nearest-fly 
+        {            
+            min-height: 100px;            
+        }
+
+        &__nearest-fly 
+        {            
+            font-size: 22px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        
+        &__wrapper
+        {       
+        //    width: @container-width-m;
+        }
+
+
+        .ballon
+        {
+
+          &--one
+          {
+            top: 120px;
+            left: 0;
+          }
+
+          &--two
+          {
+            top: 80px;
+            left: 110px;
+          }
+
+          &--three
+          {
+            top: 20px;
+            left: 0;            
+            right: 0;
+            margin: 0 auto;
+          }
+
+          &--four
+          {
+            top: 80px;
+            right: 110px;            
+          }
+
+          &--five
+          {
+            top: 120px;
+            rigth: 0;          
+          }         
+        }          
+    }
+
+    /* ////////////////////// */
+    /*    COST-medium       */
+    /* ///////////////////// */
+    .cost
+    {
+                    
+        .m-payment-background
+        {
+            background-image: url(../images/cost/background_cost.jpg);
+            background-size: cover;
+            padding: 25px 90px;
+            z-index: -1;
+        }
+
+        .payment 
+        {
+            z-index: 1;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 25px;
+          
+            &__select 
+            {
+              width: 325px;
+
+              &--mini
+              {
+                width: 75px;                
+              }
+            }
+
+            &__input
+            {
+                  width: 325px;
+            }
+        }
+
+        .total 
+        {         
+            &__price 
+            {
+              font-size:38px;
+            }
+        }
+    }
+
+    /* ////////////////////// */
+    /*   STATISTIC-medium   */
+    /* ////////////////////// */    
+    .stat 
+    {
+        padding:30px 0 0 0;
+        //min-width: @container-width-m;
+        &__numbers
+        {
+
+          font-size: 32px; 
+          height: 110px;
+          width: 110px;
+          padding: 40px 0;
+        }
+
+        &__text
+        {          
+          font-size: 18px;
+          font-weight: bold;
+        }      
+
+        &__cell
+        {
+           padding: 20px 0;
+        }
+    }
+
+    /* ////////////////////// */
+    /*   INSTRUCTORS--medium  */
+    /* ////////////////////// */
+
+    .instructor
+    {
+        
+
+        &__photo
+        {
+                     
+            img
+            {
+                width: 160px;
+                height: 160px;
+            }            
+
+            &:before
+            {
+                right: 60px;
+            }
+        }
+
+        &__name
+        {
+            padding-top: 0;
+        }
+
+        &__profession
+        {    
+            padding-top: 0;
+        }        
+    }
+
+    /* ////////////////////// */
+    /*    FEEDBACKS-medium    */
+    /* ////////////////////// */
+
+    .feedbacks
+    {
+        &__big
+        {
+            display: none;
+        }
+        &__small
+        {
+            display: block;
+        }
+    }
+    
+    /* ////////////////////// */
+    /*    Contacts-medium     */
+    /* ////////////////////// */
+    .contacts
+    {
+     //   min-width: @container-width-m;
+        min-height: 500px;
+        -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+        clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+        .office
+        {           
+            padding-bottom: 30px;
+
+            &:after 
+            {             
+              top: 0;
+              left: 0;
+            }
+
+            &__title
+            {
+               text-align: left;
+               padding-left: 60px;
+            }
+
+            &__address 
+            {
+               
+               text-align: left;
+               padding-left: 60px;
+            }
+
+            &__tel
+            {                
+                text-align: left;
+                padding-left: 60px;
+            }
+        }
+
+        .mail
+        {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 60px;
+            float: left;
+        }
+
+        .icons
+        {
+            display: inline-block;
+            vertical-align: middle;
+            float: right;
+            img
+            {
+                margin-top: 0;
+            }
+        }
+    }
+}

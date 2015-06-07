@@ -1,0 +1,508 @@
+@media (max-width: @resolution-small) 
+{        
+
+    /* ////////////////////// */
+    /*     Layout-small    */
+    /* ////////////////////// */
+    .wrapper
+    {  
+        width: @wrapper-width-xs;
+    }   
+  
+    .col-xs-0
+    {
+        display: none!important;
+    }
+
+   .generate-columns(@n,@i:1) when (@i=<@n)
+    {  
+        .col-xs-@{i}
+        {
+            width:(@i*100%/@n);       
+        }
+        .generate-columns(@n, (@i+1));
+    }
+
+    .generate-columns(12);
+
+    /* /////////////// */
+    /*     HEADER      */
+    /* /////////////// */
+    .head-foot
+    {
+        min-width: @min-block-mobile-width;
+        &__nav
+        {    
+            display: none;    
+            padding: 0; 
+            text-align: right;
+            display: none;
+            border-top: 2px solid #fff;  
+            border-bottom: 2px solid #fff;  
+
+            &-item
+            {
+                display: block;      
+                a
+                {
+                    display: inline-block;
+                }                           
+            }     
+        }
+
+        .js-nav-btn, .nav-btn--up
+        {            
+          display: inline-block;
+        }
+    }
+
+    
+
+    /* ////////////////////// */
+    /*     Tizer-small    */
+    /* ////////////////////// */
+    .tizer
+    {        
+        min-height: 300px;
+        min-width: @min-block-mobile-width;;
+        -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+        clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+
+        &__bonuses
+        {
+            display: none;
+        }
+
+        .arrow
+        {
+            display: none;
+        }
+
+        .btn-details
+        {
+            display: none;
+        }    
+
+        &__title
+        {
+            font-size: 28px; 
+            width: 300px;  
+            height: 60px;    
+            top: 50px;
+            left: 0;
+            right: 0;     
+            margin: 0 auto;                    
+        }
+    }
+
+    /* ////////////////////// */
+    /*        BONUS-small  */
+    /* ////////////////////// */
+
+    .bonus 
+    {
+        min-width: @min-block-mobile-width;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        &__item 
+        {
+            min-height: 60px;
+            padding-top: 20px;  
+            font-weight: normal;             
+            
+            &--thumb 
+            {
+              background: url(../images/bonus/xs/like.png) 0% 0% no-repeat;
+              padding-left: 50px;
+              padding-top: 10px;
+            }
+
+            &--glasses
+            {
+              background: url(../images/bonus/xs/rudder.png) 0% 0% no-repeat;
+              padding-left: 50px;
+              padding-top: 5px;
+            } 
+
+            &--photo
+            {
+              background: url(../images/bonus/xs/photo.png)  0% 0% no-repeat;
+              padding-left: 50px;
+              padding-top: 0;
+            }
+
+            &--binocular
+            {
+              background: url(../images/bonus/xs/view.png) 0% 0% no-repeat;
+              padding-left:  50px;
+              padding-top: 0;
+            }
+        } 
+    }
+
+    /* ////////////////////// */
+    /*     BRIEFLY-small   */
+    /* ////////////////////// */
+    .briefly
+    {
+        min-width: @min-block-mobile-width;
+        border-bottom: none;
+        padding-bottom: 0;
+        .video
+        {
+            display: none;
+        }
+    }
+
+
+    /* ////////////////////// */
+    /*   GALLERY-small     */
+    /* ////////////////////// */
+    .gallery
+    {
+        .wrapper
+        {
+            width: 100%;
+        }
+        .section-info__title
+        {
+            display: none;
+        }
+
+        .gallery__small
+        {
+            display: block;
+        }
+        .gallery__big
+        {
+            display: none;
+        }
+    }
+
+    /* ////////////////////// */
+    /*    ABOUT-small     */
+    /* ///////////////////// */
+    
+    .about
+    {
+       // min-width: @container-width-xs;
+        &__bg
+        {
+            background: url(../images/about/map.jpg) 50% 100% no-repeat;  
+            background-size: cover;    
+            height: 650px;                      
+        }
+
+        &__nearest-fly-txt 
+        {            
+            font-size: 22px;
+            line-height: 20px;
+        }
+
+        &__nearest-fly 
+        {            
+            font-size: 22px;
+            line-height: 50px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .timer
+        {
+          text-align: right;  
+          line-height: 25px;          
+
+          &__num
+          {
+            font-size: 32px;
+            margin-right: 5px;
+          }
+          &__txt
+          {
+            font-size: 22px;
+          }
+        }  
+        
+
+        &__wrapper
+        {       
+        //    width: @container-width-xs;
+
+        }
+
+        .ballon
+        {
+          width: 340px;
+          position: static;  
+          text-align: left;  
+          clear: both;
+
+          &__title
+          {
+            display: inline-block;
+            vertical-align: middle;   
+            margin-top: 25px;         
+          }  
+
+          &__count
+          {
+            display: inline-block;
+            float: left;
+            padding-top: 10px;
+            padding-left: 13px;    
+            background-size:36px 55px;
+            background-repeat: no-repeat;         
+            height: 60px;
+            width: 60px;                        
+            font-size: 18px;
+            background-position: 0% 0%; 
+          }     
+        }      
+    }
+
+    /* ////////////////////// */
+    /*    TYPOGRAPHY-small */
+    /* ///////////////////// */
+
+    .section-info
+    {
+        &__title
+        {
+            font-size: 28px;  
+            font-weight: normal;      
+        }
+    }
+
+    /* ////////////////////// */
+    /*    COST-small       */
+    /* ///////////////////// */
+    .cost
+    {
+        &__info 
+        {
+            display: none;
+        }
+
+        .payment 
+        {
+
+            &__label
+            {
+                font-weight: bold;
+            }
+
+            &__select 
+            {
+              width: 310px;
+
+              &--mini
+              {
+                width: 75px;
+                float: left;
+              }
+            }
+
+            &__input
+            {
+                width: 310px;
+            }
+
+            .payment__col-xs-12
+            {   
+                width: 100%;
+                padding: 0;
+            }
+
+            .payment__block--xs
+            {
+                margin-left: 0;
+            }
+        }
+
+        .total 
+        {
+            &__txt
+            {
+                display: none;
+            }
+            &__price 
+            {
+              font-size:28px;
+              margin-left: 0;
+            }
+        }
+
+
+    }
+    
+    /* ////////////////////// */
+    /*   QUESTIONS-small   */
+    /* ///////////////////// */
+    .questions
+    {
+        margin-top:  45px;
+        padding-top:  45px;
+        background-color: #f8f8f8;
+
+        &__list
+        {
+            display: none;
+        }
+
+        .section-info__title--xs-gone
+        {
+            display: none;
+        }
+
+        .tabs__menu
+        {
+            display: none;
+        }
+
+        .tabs__article 
+        {    
+          display: block;
+        }  
+
+        h2
+        {
+            display: block;
+        }
+    }
+
+    /* ////////////////////// */
+    /*   STATISTIC-small   */
+    /* ////////////////////// */    
+    .stat 
+    {        
+        //min-width: @container-width-xs;  
+        margin-top: 0; 
+
+        &__numbers
+        {
+          float: left;
+          font-size: 26px; 
+          height: 90px;
+          width: 90px;
+          padding: 30px 0;
+        }
+
+        &__text
+        {          
+          text-align: left;
+          font-size: 20px;
+          margin-top: 30px;
+          margin-left: 115px;
+        }      
+
+        &__wrapper
+        {
+            padding: 0;
+        }
+
+        &__cell
+        {
+           padding: 20px 0;
+        }
+    }
+
+    /* ////////////////////// */
+    /*   INSTRUCTORS-small      */
+    /* ////////////////////// */
+
+    .instructor
+    {
+        text-align: left;
+
+        &__photo
+        {
+          
+            float: left; 
+            margin-top: 50px; 
+            margin-right: 20px;
+
+            img
+            {
+                width: 90px;
+                height: 90px;
+            }            
+
+            &:before
+            {
+                display: none;
+            }
+        }
+
+        &__name
+        {
+            padding-top: 30px;
+        }
+
+        &__profession
+        {    
+            padding-top: 0;
+        }
+    }
+
+    /* ////////////////////// */
+    /*      FEEDBACKS-small  */
+    /* ////////////////////// */
+
+    .feedbacks
+    {
+        &__big
+        {
+            display: none;
+        }
+        &__small
+        {
+            display: block;
+        }
+    }
+
+    /* ////////////////////// */
+    /*      CONTACTS-small    */
+    /* ////////////////////// */
+
+    .contacts
+    {
+        //min-width: @container-width-xs;
+        min-height: 740px;
+        -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+        clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
+        .office
+        {
+            text-align: left;
+            padding-bottom: 30px;
+            &:after 
+            {
+              top: 0;
+              left: 0;
+            }
+            &__title
+            {
+              padding-left: 60px;
+            }
+
+            &__address 
+            {
+               padding-left: 60px;
+            }
+
+            &__tel
+            {
+                padding-left: 60px;
+            }
+        }
+
+        .mail
+        {
+            padding-left: 60px;
+        }
+
+        .icons
+        {
+            text-align: center;
+        }
+    }
+}

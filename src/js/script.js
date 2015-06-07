@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   	//slider
     var slider = $('.bxslider').bxSlider(
     {
@@ -132,7 +132,7 @@ $(document).ready(function(){
    //nav-menu-btn
    $(function()
    {
-        $(document).on('click', '.nav-btn', function()
+        $(document).on('click', '.js-nav-btn', function()
         {      
 	      	if($("header nav .head-foot__nav").length) 
 	      	{	  			

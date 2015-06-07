@@ -6,10 +6,12 @@
 {
   background-image: url(../images/tizer/background_tizer.jpg);
   background-size: cover;
-  min-width: @container-width;
+  min-width: @min-block-width;
   min-height: 645px;
   -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
   clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+  position: relative;
+  overflow: hidden;
 
   &__title
   {   
@@ -52,14 +54,7 @@
       right: 20px;
       bottom: 180px;
     }
-  }
-  &__wrapper
-  {
-    margin: 0 auto;
-    width: @container-width;
-    min-height: 645px;
-    position: relative;
-  }
+  }  
 }
 
 .btn-details
