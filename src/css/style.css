@@ -1,8 +1,12 @@
 /* ////////////////////// */
 /*        ABOUT          */
 /* ///////////////////// */
+.about {
+  min-width: 1188px;
+}
 .about__bg {
   background: url(../images/about/path.png) 50% 140px no-repeat, url(../images/about/map.jpg) 50% 100% no-repeat;
+  background-size: 1188px auto, cover;
   position: relative;
   height: 650px;
 }
@@ -11,7 +15,7 @@
   position: relative;
   min-height: 530px;
   margin: 0 auto;
-  width: 1200px;
+  min-width: 1188px;
 }
 .about__nearest-fly-txt {
   font-size: 32px;
@@ -28,6 +32,9 @@
 }
 .about__nearest-fly .timer {
   text-align: right;
+}
+.about__nearest-fly .timer__block.col-3 {
+  padding: 0;
 }
 .about__nearest-fly .timer__num {
   font-size: 32px;
@@ -83,7 +90,6 @@
 .briefly {
   padding-bottom: 80px;
   border-bottom: 1px solid #444444;
-  background: green;
   min-width: 1188px;
 }
 .briefly .video {
@@ -1040,6 +1046,9 @@ p {
   /* ////////////////////// */
   /*   GALLERY-small     */
   /* ////////////////////// */
+  .gallery {
+    min-width: 328px;
+  }
   .gallery .wrapper {
     width: 100%;
   }
@@ -1055,9 +1064,12 @@ p {
   /* ////////////////////// */
   /*    ABOUT-small     */
   /* ///////////////////// */
+  .about {
+    min-width: 328px;
+  }
   .about__bg {
     background: url(../images/about/map.jpg) 50% 100% no-repeat;
-    background-size: cover;
+    background-size: 328px auto, cover;
     height: 650px;
   }
   .about__nearest-fly-txt {
@@ -1081,8 +1093,11 @@ p {
   .about .timer__txt {
     font-size: 22px;
   }
+  .about__wrapper {
+    min-width: 328px;
+  }
   .about .ballon {
-    width: 340px;
+    min-width: 328px;
     position: static;
     text-align: left;
     clear: both;
@@ -1398,6 +1413,9 @@ p {
   /* ////////////////////// */
   /*   GALLERY--medium     */
   /* ////////////////////// */
+  .gallery {
+    min-width: 736px;
+  }
   .gallery .section-info__title {
     display: none;
   }
@@ -1410,7 +1428,14 @@ p {
   /* ////////////////////// */
   /*    ABOUT-medium     */
   /* ///////////////////// */
+  .about {
+    min-width: 736px;
+  }
+  .about__wrapper {
+    min-width: 736px;
+  }
   .about__bg {
+    background-size: 736px auto, cover;
     height: 550px;
   }
   .about__nearest-fly-txt {

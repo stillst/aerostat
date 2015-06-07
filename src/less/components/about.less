@@ -3,12 +3,12 @@
 /* ///////////////////// */
 .about
 {
-  //min-width: @container-width;
+  min-width: @min-block-width;
   &__bg
   {
     background: url(../images/about/path.png) 50% 140px no-repeat,
     url(../images/about/map.jpg) 50% 100% no-repeat;    
-    //background-size: @container-width auto, cover;
+    background-size: @min-block-width auto, cover;
     position: relative;
     height: 650px;
   }
@@ -20,12 +20,11 @@
     position: relative;
     min-height: 530px;  
     margin: 0 auto; 
-    width: 1200px; 
+    min-width: @min-block-width;
   }
 
   &__nearest-fly-txt
-  {
-    
+  {    
     font-size: 32px;
   }
 
@@ -39,10 +38,14 @@
     opacity: 0.7;
     color: #fff;
     line-height: 100px;
-
+  
     .timer
     {
-      text-align: right;     
+      text-align: right;   
+      &__block.col-3  
+      {
+        padding: 0;
+      }
       &__num
       {
         font-size: 32px;

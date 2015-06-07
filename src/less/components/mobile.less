@@ -160,6 +160,7 @@
     /* ////////////////////// */
     .gallery
     {
+        min-width: @min-block-mobile-width;
         .wrapper
         {
             width: 100%;
@@ -185,11 +186,11 @@
     
     .about
     {
-       // min-width: @container-width-xs;
+       min-width: @min-block-mobile-width;
         &__bg
         {
             background: url(../images/about/map.jpg) 50% 100% no-repeat;  
-            background-size: cover;    
+            background-size: @min-block-mobile-width auto, cover;             
             height: 650px;                      
         }
 
@@ -222,17 +223,15 @@
             font-size: 22px;
           }
         }  
-        
-
+    
         &__wrapper
         {       
-        //    width: @container-width-xs;
-
+           min-width: @min-block-mobile-width;
         }
 
         .ballon
         {
-          width: 340px;
+          min-width: @min-block-mobile-width;
           position: static;  
           text-align: left;  
           clear: both;

@@ -153,6 +153,7 @@
     /* ////////////////////// */
     .gallery    
     {
+        min-width: @min-block-tablet-width;
         .section-info__title
         {
             display: none;
@@ -170,14 +171,19 @@
 
     /* ////////////////////// */
     /*    ABOUT-medium     */
-    /* ///////////////////// */
-    
+    /* ///////////////////// */    
     .about
     {
-        //min-width: @container-width-m;
+        min-width: @min-block-tablet-width;
+
+        &__wrapper
+        {       
+            min-width: @min-block-tablet-width;
+        }
+        
         &__bg
         {            
-          //  background-size: @container-width-m auto, cover; 
+            background-size: @min-block-tablet-width auto, cover; 
             height: 550px;                      
         }
 
@@ -198,14 +204,7 @@
             line-height: 50px;
             text-align: center;
         }
-        
-        
-        &__wrapper
-        {       
-        //    width: @container-width-m;
-        }
-
-
+                        
         .ballon
         {
 
