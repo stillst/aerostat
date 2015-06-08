@@ -23,6 +23,20 @@
         .generate-columns(@n, (@i+1));
     }
 
+    /* ////////////////////// */
+    /*    TYPOGRAPHY-small */
+    /* ///////////////////// */
+
+    .section-info
+    {
+        &__title
+        {
+            font-size: 28px;  
+            font-weight: normal;      
+        }
+    }
+
+
     .generate-columns(12);
 
     /* /////////////// */
@@ -190,7 +204,7 @@
         &__bg
         {
             background: url(../images/about/map.jpg) 50% 100% no-repeat;  
-            background-size: @min-block-mobile-width auto, cover;             
+            background-size: auto 30%, cover;             
             height: 650px;                      
         }
 
@@ -259,28 +273,19 @@
         }      
     }
 
-    /* ////////////////////// */
-    /*    TYPOGRAPHY-small */
-    /* ///////////////////// */
-
-    .section-info
-    {
-        &__title
-        {
-            font-size: 28px;  
-            font-weight: normal;      
-        }
-    }
 
     /* ////////////////////// */
     /*    COST-small       */
     /* ///////////////////// */
     .cost
     {
+        min-width: @min-block-mobile-width;
         &__info 
         {
             display: none;
         }
+
+        
 
         .payment 
         {
@@ -289,7 +294,7 @@
             {
                 font-weight: bold;
             }
-
+                        
             &__select 
             {
               width: 310px;
@@ -339,6 +344,7 @@
     /* ///////////////////// */
     .questions
     {
+        min-width: @min-block-mobile-width;
         margin-top:  45px;
         padding-top:  45px;
         background-color: #f8f8f8;
@@ -374,7 +380,7 @@
     /* ////////////////////// */    
     .stat 
     {        
-        //min-width: @container-width-xs;  
+        min-width: @min-block-mobile-width;
         margin-top: 0; 
 
         &__numbers
@@ -411,11 +417,10 @@
 
     .instructor
     {
+        min-width: @min-block-mobile-width;
         text-align: left;
-
         &__photo
-        {
-          
+        {          
             float: left; 
             margin-top: 50px; 
             margin-right: 20px;
@@ -449,6 +454,7 @@
 
     .feedbacks
     {
+        min-width: @min-block-mobile-width;
         &__big
         {
             display: none;
@@ -465,7 +471,7 @@
 
     .contacts
     {
-        //min-width: @container-width-xs;
+        min-width: @min-block-mobile-width;
         min-height: 740px;
         -webkit-clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
         clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%);
