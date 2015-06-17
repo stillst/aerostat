@@ -20,27 +20,24 @@
 	}
 
 	.payment 
-	{
-	    .line
-        {
-            margin:0;
-        }
-        
-		&__block
+	{	          
+		&__line
 		{
-			margin-bottom: 25px;
+			margin: 0 0 25px 0;
+			font-size: 0;  
+			& > [class^=col-]
+			{
+				display: inline-block;
+				vertical-align: top;  				
+				font-size: @font-size-base;
+			}
 		}
-
+							
 		&__label
 		{
 			font-size: 18px;
 			line-height: 40px;
 			color: #444444;
-
-			&--right
-			{
- 				margin-left: 5px;
-			}
 		}
 
 		&__select 
@@ -48,7 +45,6 @@
 		  width: 356px;
 		  border-radius: 6px;
   		  height: 40px;
-  		  float: right;
   		  outline:none; 		
 		  box-shadow:none;
 
@@ -69,7 +65,6 @@
 			width: 355px;
 			border-radius: 6px;
 			height: 40px;
-			float: right;	
 			outline:none; 		
 			box-shadow:none;
 
